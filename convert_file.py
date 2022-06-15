@@ -41,7 +41,7 @@ def convert_to_txt(file):
             '\t'.join([s.strip() for s in next(f).split(';')][1:]) + '\n'
         for line in f:
             cells = line.split(';')
-            text = text + '\t'.join([cells[0]] + ['na'] + cells[1:]) + '\n'
+            text = text + '\t'.join([cells[0]] + ['na'] + cells[1:])
     new_dir = os.path.join(os.path.dirname(file), 'txt')
     if not os.path.exists(new_dir):
         os.makedirs(new_dir)
