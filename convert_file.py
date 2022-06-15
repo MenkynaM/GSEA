@@ -1,27 +1,38 @@
-
 import os
 from string import digits
 
-
 def convert(file):
-    lines = open(file, "r")
-    text = ''
-    for line in lines:
-        cells = line.split(',')
-        if line[0] == ',':
-            for i in range(1, len(cells) - 1):
-                cells[i] = '"' + cells[i] + '"'
-            cells[-1] = '"' + cells[-1][:-1] + '"\n'
-        else:
-            cells[0] = '"' + cells[0] + '"'
-        text = text + ','.join(cells)
-    lines.close()
+    with open(file, 'r') as f:
+        text = ',"' + '","'.join([b.strip() for b in next(f).split(';')][1:]) + '"\n'
+        for line in f:
+            id, vals = line.split(';')[0], line.split(';')[1:]
+            text = text + '"' + id + '",' + ','.join(vals)
     new_dir = os.path.join(os.path.dirname(file), 'converted')
     if not os.path.exists(new_dir):
         os.makedirs(new_dir)
     output = open(os.path.join(new_dir, f'{file}'[11:-6] + '_conv.csv'), 'w')
     output.writelines(text)
     output.close()
+
+# def convert(file):
+#     lines = open(file, "r")
+#     text = ''
+#     for line in lines:
+#         cells = line.split(',')
+#         if line[0] == ',':
+#             for i in range(1, len(cells) - 1):
+#                 cells[i] = '"' + cells[i] + '"'
+#             cells[-1] = '"' + cells[-1][:-1] + '"\n'
+#         else:
+#             cells[0] = '"' + cells[0] + '"'
+#         text = text + ','.join(cells)
+#     lines.close()
+#     new_dir = os.path.join(os.path.dirname(file), 'converted')
+#     if not os.path.exists(new_dir):
+#         os.makedirs(new_dir)
+#     output = open(os.path.join(new_dir, f'{file}'[11:-6] + '_conv.csv'), 'w')
+#     output.writelines(text)
+#     output.close()
 
 
 def convert_to_txt(file):
@@ -31,15 +42,18 @@ def convert_to_txt(file):
         for line in f:
             cells = line.split(';')
             text = text + '\t'.join([cells[0]] + ['na'] + cells[1:]) + '\n'
-        new_dir = os.path.join(os.path.dirname(file), 'txt')
-        if not os.path.exists(new_dir):
-            os.makedirs(new_dir)
-        output = open(os.path.join(new_dir, f'{file}'[11:-6] + '.txt'), 'w')
-        output.writelines(text)
-        output.close()
+    new_dir = os.path.join(os.path.dirname(file), 'txt')
+    if not os.path.exists(new_dir):
+        os.makedirs(new_dir)
+    output = open(os.path.join(new_dir, f'{file}'[11:-6] + '.txt'), 'w')
+    output.writelines(text)
+    output.close()
 
 
 def create_cls(file):
+    '''Creates .cls file from a .csv obtained by running 
+      
+    '''
     code_set = []
     with open(file, 'r') as f:
         header = next(f).split(';')
@@ -100,7 +114,7 @@ def get_sample_code(string: str) -> tuple:
 
 
 if __name__ == "__main__":
-    directory = 'data_3'
+    directory = 'data'
     for file in os.scandir(directory):
         if file.is_file():
             convert(file)
