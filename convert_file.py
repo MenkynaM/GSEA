@@ -1,5 +1,4 @@
 import os
-from string import digits
 
 
 
@@ -128,7 +127,7 @@ def create_cls(file):
 def get_sample_code(string: str) -> tuple:
     index = 0
     for char in string.lstrip():
-        if char not in digits:
+        if char not in '0123456789':
             index = index + 1
         else:
             break
