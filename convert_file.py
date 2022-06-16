@@ -52,6 +52,26 @@ def convert_to_txt(file):
     output.close()
 
 
+def convert_to_gct(file):
+    nproteins = 0
+    with open(file, 'r') as f:
+        header = next(f).split(';')
+        nsamples = len(header) - 1
+        text = 'NAME\tDESCRIPTION\t' + \
+            '\t'.join([s.strip() for s in header][1:]) + '\n'
+        for line in f:
+            nproteins = nproteins + 1
+            cells = line.split(';')
+            text = text + '\t'.join([cells[0]] + ['na'] + cells[1:])
+    new_dir = os.path.join(os.path.dirname(file), 'gct')
+    text = f'#1.2\n{nproteins}\t{nsamples}\n' + text
+    if not os.path.exists(new_dir):
+        os.makedirs(new_dir)
+    output = open(os.path.join(new_dir, f'{file}'[11:-6] + '.gct'), 'w')
+    output.writelines(text)
+    output.close()
+
+
 def create_cls(file):
     '''Creates .cls file from a .csv obtained by running 
       
@@ -122,3 +142,4 @@ if __name__ == "__main__":
             convert(file)
             create_cls(file)
             convert_to_txt(file)
+            convert_to_gct(file)
