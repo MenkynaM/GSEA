@@ -1,6 +1,8 @@
 import os
 from string import digits
 
+
+
 def convert(file):
     with open(file, 'r') as f:
         text = ',"' + '","'.join([b.strip() for b in next(f).split(';')][1:]) + '"\n'
