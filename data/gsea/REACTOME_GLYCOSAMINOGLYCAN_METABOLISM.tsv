@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GALNS	galactosamine (N-acetyl)-6-sulfatase [Source:HGNC Symbol;Acc:HGNC:4122]	34	0.3428772985935211	0.03669649	No	
+row_1	GPC3	glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451]	65	0.23193790018558502	0.04599674	No	
+row_2	B4GAT1	"beta-1,4-glucuronyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:15685]"	76	0.19371294975280762	0.08714738	No	
+row_3	GLB1	galactosidase beta 1 [Source:HGNC Symbol;Acc:HGNC:4298]	111	0.17899495363235474	0.07027172	No	
+row_4	GNS	glucosamine (N-acetyl)-6-sulfatase [Source:HGNC Symbol;Acc:HGNC:4422]	150	0.03302637115120888	-0.003189365	No	
+row_5	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	155	0.0	-0.012058545	No	
+row_6	CSPG4	chondroitin sulfate proteoglycan 4 [Source:HGNC Symbol;Acc:HGNC:2466]	157	0.0	-0.01427584	No	
+row_7	CD44	CD44 molecule (Indian blood group) [Source:HGNC Symbol;Acc:HGNC:1681]	180	-0.02198762074112892	-0.055868708	No	
+row_8	HYAL1	hyaluronidase 1 [Source:HGNC Symbol;Acc:HGNC:5320]	189	-0.04728696495294571	-0.05814924	No	
+row_9	SDC1	syndecan 1 [Source:HGNC Symbol;Acc:HGNC:10658]	193	-0.060936953872442245	-0.044881206	No	
+row_10	NAGLU	N-acetyl-alpha-glucosaminidase [Source:HGNC Symbol;Acc:HGNC:7632]	224	-0.1682678461074829	-0.056394313	No	
+row_11	HEXA	hexosaminidase subunit alpha [Source:HGNC Symbol;Acc:HGNC:4878]	234	-0.19371294975280762	-0.013026379	No	
+row_12	GPC4	glypican 4 [Source:HGNC Symbol;Acc:HGNC:4452]	256	-0.19371294975280762	0.0037340154	No	
+row_13	B4GALT1	"beta-1,4-galactosyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:924]"	351	-0.3428772985935211	-0.092607185	Yes	
+row_14	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	460	-1.0497639179229736	0.011086429	Yes	

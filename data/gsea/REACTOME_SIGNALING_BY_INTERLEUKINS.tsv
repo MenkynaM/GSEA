@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MSN	moesin [Source:HGNC Symbol;Acc:HGNC:7373]	42	0.3217311501502991	-0.041458502	Yes	
+row_1	ANXA2	annexin A2 [Source:HGNC Symbol;Acc:HGNC:537]	44	0.31311604380607605	0.008408875	Yes	
+row_2	ANXA1	annexin A1 [Source:HGNC Symbol;Acc:HGNC:533]	46	0.3068426251411438	0.05723181	Yes	
+row_3	SOD1	superoxide dismutase 1 [Source:HGNC Symbol;Acc:HGNC:11179]	47	0.3058677017688751	0.10815488	Yes	
+row_4	YWHAZ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta [Source:HGNC Symbol;Acc:HGNC:12855]	48	0.29230356216430664	0.15681969	Yes	
+row_5	IL18BP	interleukin 18 binding protein [Source:HGNC Symbol;Acc:HGNC:5987]	78	0.19371294975280762	0.123459555	No	
+row_6	IL4R	interleukin 4 receptor [Source:HGNC Symbol;Acc:HGNC:6015]	96	0.19371294975280762	0.117248744	No	
+row_7	CA1	carbonic anhydrase 1 [Source:HGNC Symbol;Acc:HGNC:1368]	104	0.19371294975280762	0.13366237	No	
+row_8	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	173	0.0	-0.020183789	No	
+row_9	MUC1	"mucin 1, cell surface associated [Source:HGNC Symbol;Acc:HGNC:7508]"	175	0.0	-0.022446232	No	
+row_10	IL1RN	interleukin 1 receptor antagonist [Source:HGNC Symbol;Acc:HGNC:6000]	186	-0.04254847392439842	-0.03798689	No	
+row_11	SDC1	syndecan 1 [Source:HGNC Symbol;Acc:HGNC:10658]	193	-0.060936953872442245	-0.041416325	No	
+row_12	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.030343572	No	
+row_13	IL10RB	interleukin 10 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:5965]	238	-0.19371294975280762	-0.095377915	No	
+row_14	TALDO1	transaldolase 1 [Source:HGNC Symbol;Acc:HGNC:11559]	253	-0.19371294975280762	-0.09480139	No	
+row_15	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	262	-0.19371294975280762	-0.0806502	No	
+row_16	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	284	-0.22745375335216522	-0.09029338	No	
+row_17	VIM	vimentin [Source:HGNC Symbol;Acc:HGNC:12692]	297	-0.24025307595729828	-0.07744363	No	
+row_18	LCN2	lipocalin 2 [Source:HGNC Symbol;Acc:HGNC:6526]	300	-0.2459401935338974	-0.041022617	No	
+row_19	IGHG4	immunoglobulin heavy constant gamma 4 (G4m marker) [Source:HGNC Symbol;Acc:HGNC:5528]	326	-0.3139193654060364	-0.04532014	No	
+row_20	LCP1	lymphocyte cytosolic protein 1 [Source:HGNC Symbol;Acc:HGNC:6528]	339	-0.32460901141166687	-0.01842621	No	
+row_21	HAVCR2	hepatitis A virus cellular receptor 2 [Source:HGNC Symbol;Acc:HGNC:18437]	407	-0.5384327173233032	-0.08036776	No	
+row_22	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	0.009651123	No	
+row_23	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	447	-0.7030303478240967	0.04072384	No	

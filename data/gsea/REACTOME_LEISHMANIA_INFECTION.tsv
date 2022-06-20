@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGHV3-7	immunoglobulin heavy variable 3-7 [Source:HGNC Symbol;Acc:HGNC:5620]	4	0.5455996990203857	0.11224167	No	
+row_1	IGLV3-21	immunoglobulin lambda variable 3-21 [Source:HGNC Symbol;Acc:HGNC:5905]	40	0.3217311501502991	0.10540577	No	
+row_2	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	112	0.17565980553627014	-0.014412841	No	
+row_3	IGHG2	immunoglobulin heavy constant gamma 2 (G2m marker) [Source:HGNC Symbol;Acc:HGNC:5526]	117	0.14557477831840515	0.008974114	No	
+row_4	IGHV3-23	immunoglobulin heavy variable 3-23 [Source:HGNC Symbol;Acc:HGNC:5588]	126	0.11588180810213089	0.016817033	No	
+row_5	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	137	0.09349644929170609	0.015213378	No	
+row_6	IGKV3-15	immunoglobulin kappa variable 3-15 [Source:HGNC Symbol;Acc:HGNC:5816]	151	0.02968350425362587	-0.0072760084	No	
+row_7	GGT1	gamma-glutamyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:4250]	169	0.0	-0.045307327	No	
+row_8	IGKV3D-20	immunoglobulin kappa variable 3D-20 [Source:HGNC Symbol;Acc:HGNC:5825]	192	-0.06038494035601616	-0.081111446	No	
+row_9	FCGR3A	Fc fragment of IgG receptor IIIa [Source:HGNC Symbol;Acc:HGNC:3619]	208	-0.1298365741968155	-0.08582881	No	
+row_10	IGKV3-20	immunoglobulin kappa variable 3-20 [Source:HGNC Symbol;Acc:HGNC:5817]	212	-0.1367180496454239	-0.062172003	No	
+row_11	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	266	-0.19371294975280762	-0.13771214	No	
+row_12	IGKV1-33	immunoglobulin kappa variable 1-33 [Source:HGNC Symbol;Acc:HGNC:5737]	268	-0.19371294975280762	-0.09692118	No	
+row_13	IGHG4	immunoglobulin heavy constant gamma 4 (G4m marker) [Source:HGNC Symbol;Acc:HGNC:5528]	326	-0.3139193654060364	-0.15470926	Yes	
+row_14	TXN	thioredoxin [Source:HGNC Symbol;Acc:HGNC:12435]	342	-0.3379543721675873	-0.11319888	Yes	
+row_15	IGKV2-28	immunoglobulin kappa variable 2-28 [Source:HGNC Symbol;Acc:HGNC:5783]	345	-0.3415651321411133	-0.041803688	Yes	
+row_16	DPEP1	dipeptidase 1 [Source:HGNC Symbol;Acc:HGNC:3002]	350	-0.3428772985935211	0.025408689	Yes	
+row_17	IGKV3-11	immunoglobulin kappa variable 3-11 [Source:HGNC Symbol;Acc:HGNC:5815]	395	-0.48300623893737793	0.034261465	Yes	
+row_18	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	0.1275167	Yes	

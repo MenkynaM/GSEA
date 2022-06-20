@@ -1,0 +1,12 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MSN	moesin [Source:HGNC Symbol;Acc:HGNC:7373]	42	0.3217311501502991	0.06945675	Yes	
+row_1	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	112	0.17565980553627014	0.00612906	Yes	
+row_2	FGG	fibrinogen gamma chain [Source:HGNC Symbol;Acc:HGNC:3694]	149	0.034282755106687546	-0.055754665	Yes	
+row_3	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.119018085	Yes	
+row_4	PEBP1	phosphatidylethanolamine binding protein 1 [Source:HGNC Symbol;Acc:HGNC:8630]	202	-0.10305159538984299	-0.08258899	Yes	
+row_5	FGB	fibrinogen beta chain [Source:HGNC Symbol;Acc:HGNC:3662]	215	-0.13935165107250214	-0.03889747	Yes	
+row_6	EGF	epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]	229	-0.18214283883571625	0.024111403	Yes	
+row_7	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	266	-0.19371294975280762	0.042388197	Yes	
+row_8	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	284	-0.22745375335216522	0.1193879	Yes	
+row_9	FGA	fibrinogen alpha chain [Source:HGNC Symbol;Acc:HGNC:3661]	312	-0.2659088373184204	0.19374457	Yes	
+row_10	TPM3	tropomyosin 3 [Source:HGNC Symbol;Acc:HGNC:12012]	318	-0.27908313274383545	0.32307684	Yes	

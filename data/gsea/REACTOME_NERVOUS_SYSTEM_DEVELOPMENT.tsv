@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MSN	moesin [Source:HGNC Symbol;Acc:HGNC:7373]	42	0.3217311501502991	-0.0069430773	No	
+row_1	PFN1	profilin 1 [Source:HGNC Symbol;Acc:HGNC:8881]	89	0.19371294975280762	-0.0572526	No	
+row_2	COL4A2	collagen type IV alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2203]	98	0.19371294975280762	-0.022929609	No	
+row_3	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	112	0.17565980553627014	-0.0046017114	No	
+row_4	CNTN1	contactin 1 [Source:HGNC Symbol;Acc:HGNC:2171]	122	0.13552618026733398	0.0118323825	No	
+row_5	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	155	0.0	-0.059437107	No	
+row_6	CACNA1S	calcium voltage-gated channel subunit alpha1 S [Source:HGNC Symbol;Acc:HGNC:1397]	172	0.0	-0.09507185	No	
+row_7	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	173	0.0	-0.09507185	No	
+row_8	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.12171375	No	
+row_9	SDCBP	syndecan binding protein [Source:HGNC Symbol;Acc:HGNC:10662]	206	-0.10540925711393356	-0.117840365	No	
+row_10	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	262	-0.19371294975280762	-0.18819444	Yes	
+row_11	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	266	-0.19371294975280762	-0.14273559	Yes	
+row_12	EFNB1	ephrin B1 [Source:HGNC Symbol;Acc:HGNC:3226]	292	-0.24025307595729828	-0.13374762	Yes	
+row_13	DAG1	dystroglycan 1 [Source:HGNC Symbol;Acc:HGNC:2666]	357	-0.3434707224369049	-0.18383698	Yes	
+row_14	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	366	-0.369714617729187	-0.102140844	Yes	
+row_15	COL6A3	collagen type VI alpha 3 chain [Source:HGNC Symbol;Acc:HGNC:2213]	417	-0.5583490133285522	-0.063212514	Yes	
+row_16	COL6A1	collagen type VI alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2211]	432	-0.6237465739250183	0.07349661	Yes	

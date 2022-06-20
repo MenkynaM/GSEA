@@ -1,0 +1,12 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7	0.4954618811607361	0.15982781	Yes	
+row_1	A2M	alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7]	10	0.46952611207962036	0.32147285	Yes	
+row_2	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	21	0.3834083676338196	0.43508127	Yes	
+row_3	APOA4	apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602]	30	0.3428772985935211	0.5387521	Yes	
+row_4	CREB3L3	cAMP responsive element binding protein 3 like 3 [Source:HGNC Symbol;Acc:HGNC:18855]	73	0.19371294975280762	0.514948	Yes	
+row_5	NPC2	NPC intracellular cholesterol transporter 2 [Source:HGNC Symbol;Acc:HGNC:14537]	86	0.19371294975280762	0.55707794	Yes	
+row_6	LPA	lipoprotein(a) [Source:HGNC Symbol;Acc:HGNC:6667]	99	0.19371294975280762	0.59920794	Yes	
+row_7	ALB	albumin [Source:HGNC Symbol;Acc:HGNC:399]	116	0.14769475162029266	0.61627305	Yes	
+row_8	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	163	0.0	0.51517415	No	
+row_9	CUBN	cubilin [Source:HGNC Symbol;Acc:HGNC:2548]	198	-0.08593987673521042	0.4708402	No	
+row_10	LCAT	lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522]	338	-0.3217311501502991	0.2791209	No	

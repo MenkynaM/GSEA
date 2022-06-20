@@ -1,0 +1,14 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	A2M	alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7]	10	0.46952611207962036	0.10489844	No	
+row_1	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	19	0.39058732986450195	0.19286455	No	
+row_2	TFPI	tissue factor pathway inhibitor [Source:HGNC Symbol;Acc:HGNC:11760]	106	0.19371294975280762	0.055404678	No	
+row_3	PRCP	prolylcarboxypeptidase [Source:HGNC Symbol;Acc:HGNC:9344]	140	0.07277202606201172	0.0022366652	No	
+row_4	FGG	fibrinogen gamma chain [Source:HGNC Symbol;Acc:HGNC:3694]	149	0.034282755106687546	-0.0061523262	No	
+row_5	SERPINA5	serpin family A member 5 [Source:HGNC Symbol;Acc:HGNC:8723]	201	-0.10040406882762909	-0.09158293	No	
+row_6	FGB	fibrinogen beta chain [Source:HGNC Symbol;Acc:HGNC:3662]	215	-0.13935165107250214	-0.08259577	No	
+row_7	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	303	-0.2513008117675781	-0.20668972	Yes	
+row_8	THBD	thrombomodulin [Source:HGNC Symbol;Acc:HGNC:11784]	305	-0.25819888710975647	-0.13907275	Yes	
+row_9	FGA	fibrinogen alpha chain [Source:HGNC Symbol;Acc:HGNC:3661]	312	-0.2659088373184204	-0.08040831	Yes	
+row_10	F2	"coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]"	361	-0.35386425256729126	-0.09067341	Yes	
+row_11	PROCR	protein C receptor [Source:HGNC Symbol;Acc:HGNC:9452]	381	-0.4118212163448334	-0.021247607	Yes	
+row_12	KNG1	kininogen 1 [Source:HGNC Symbol;Acc:HGNC:6383]	451	-0.7560971975326538	0.030905148	Yes	

@@ -1,0 +1,15 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ELANE	"elastase, neutrophil expressed [Source:HGNC Symbol;Acc:HGNC:3309]"	70	0.20178043842315674	-0.09072115	No	
+row_1	ITLN1	intelectin 1 [Source:HGNC Symbol;Acc:HGNC:18259]	87	0.19371294975280762	-0.06453794	No	
+row_2	S100A9	S100 calcium binding protein A9 [Source:HGNC Symbol;Acc:HGNC:10499]	114	0.17206420004367828	-0.06736077	No	
+row_3	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	115	0.14819487929344177	-0.02024955	No	
+row_4	DEFA1	defensin alpha 1 [Source:HGNC Symbol;Acc:HGNC:2761]	156	0.0	-0.10874513	No	
+row_5	S100A8	S100 calcium binding protein A8 [Source:HGNC Symbol;Acc:HGNC:10498]	181	-0.0284140445291996	-0.15280963	No	
+row_6	LTF	lactotransferrin [Source:HGNC Symbol;Acc:HGNC:6720]	182	-0.03053366206586361	-0.14310296	No	
+row_7	CHGA	chromogranin A [Source:HGNC Symbol;Acc:HGNC:1929]	269	-0.19371294975280762	-0.27178702	Yes	
+row_8	PGLYRP2	peptidoglycan recognition protein 2 [Source:HGNC Symbol;Acc:HGNC:30013]	276	-0.21246467530727386	-0.21751872	Yes	
+row_9	DEFB1	defensin beta 1 [Source:HGNC Symbol;Acc:HGNC:2766]	298	-0.24418307840824127	-0.18635297	Yes	
+row_10	LCN2	lipocalin 2 [Source:HGNC Symbol;Acc:HGNC:6526]	300	-0.2459401935338974	-0.11038086	Yes	
+row_11	LYZ	lysozyme [Source:HGNC Symbol;Acc:HGNC:6740]	358	-0.3451850414276123	-0.12675256	Yes	
+row_12	PI3	peptidase inhibitor 3 [Source:HGNC Symbol;Acc:HGNC:8947]	383	-0.41914138197898865	-0.04660466	Yes	
+row_13	PGLYRP1	peptidoglycan recognition protein 1 [Source:HGNC Symbol;Acc:HGNC:8904]	448	-0.7103109359741211	0.03761061	Yes	

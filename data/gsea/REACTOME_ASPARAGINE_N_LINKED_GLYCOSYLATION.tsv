@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SERPINA1	serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941]	23	0.3746103346347809	0.035458025	No	
+row_1	CTSA	cathepsin A [Source:HGNC Symbol;Acc:HGNC:9251]	51	0.2680804431438446	0.03746098	No	
+row_2	CTSZ	cathepsin Z [Source:HGNC Symbol;Acc:HGNC:2547]	52	0.26116859912872314	0.09773572	No	
+row_3	FUCA1	alpha-L-fucosidase 1 [Source:HGNC Symbol;Acc:HGNC:4006]	75	0.19371294975280762	0.09366198	No	
+row_4	CTSC	cathepsin C [Source:HGNC Symbol;Acc:HGNC:2528]	90	0.19371294975280762	0.1073266	No	
+row_5	DYNC1H1	dynein cytoplasmic 1 heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:2961]	91	0.19371294975280762	0.15203334	No	
+row_6	GLB1	galactosidase beta 1 [Source:HGNC Symbol;Acc:HGNC:4298]	111	0.17899495363235474	0.15121473	No	
+row_7	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.015254119	No	
+row_8	FOLR1	folate receptor alpha [Source:HGNC Symbol;Acc:HGNC:3791]	222	-0.16756562888622284	-0.03644884	No	
+row_9	UMOD	uromodulin [Source:HGNC Symbol;Acc:HGNC:12559]	277	-0.2126782089471817	-0.107099056	No	
+row_10	B4GALT1	"beta-1,4-galactosyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:924]"	351	-0.3428772985935211	-0.18982941	Yes	
+row_11	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	363	-0.359403133392334	-0.1312735	Yes	
+row_12	MAN1A1	mannosidase alpha class 1A member 1 [Source:HGNC Symbol;Acc:HGNC:6821]	371	-0.3834083676338196	-0.058308266	Yes	
+row_13	LMAN2	"lectin, mannose binding 2 [Source:HGNC Symbol;Acc:HGNC:16986]"	401	-0.5053980350494385	-0.0059696976	Yes	
+row_14	CD59	CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689]	435	-0.6311374306678772	0.06651891	Yes	

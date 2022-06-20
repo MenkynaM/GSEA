@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TTR	transthyretin [Source:HGNC Symbol;Acc:HGNC:12405]	6	0.4954984486103058	0.08146311	Yes	
+row_1	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7	0.4954618811607361	0.17622301	Yes	
+row_2	APOA4	apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602]	30	0.3428772985935211	0.19301975	Yes	
+row_3	CALB1	calbindin 1 [Source:HGNC Symbol;Acc:HGNC:1434]	35	0.340299129486084	0.2492347	Yes	
+row_4	H2BC3	H2B clustered histone 3 [Source:HGNC Symbol;Acc:HGNC:4751]	92	0.19371294975280762	0.16211489	No	
+row_5	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	163	0.0	0.006904241	No	
+row_6	LTF	lactotransferrin [Source:HGNC Symbol;Acc:HGNC:6720]	182	-0.03053366206586361	-0.027167331	No	
+row_7	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.03883752	No	
+row_8	B2M	beta-2-microglobulin [Source:HGNC Symbol;Acc:HGNC:914]	214	-0.1384781152009964	-0.0544814	No	
+row_9	CST3	cystatin C [Source:HGNC Symbol;Acc:HGNC:2475]	221	-0.16005319356918335	-0.037174087	No	
+row_10	FGA	fibrinogen alpha chain [Source:HGNC Symbol;Acc:HGNC:3661]	312	-0.2659088373184204	-0.18587406	No	
+row_11	LYZ	lysozyme [Source:HGNC Symbol;Acc:HGNC:6740]	358	-0.3451850414276123	-0.21963373	No	
+row_12	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	-0.22487012	No	
+row_13	GSN	gelsolin [Source:HGNC Symbol;Acc:HGNC:4620]	453	-0.7636272311210632	-0.17638305	No	
+row_14	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	460	-1.0497639179229736	0.01108648	No	

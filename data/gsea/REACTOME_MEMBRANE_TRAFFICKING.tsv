@@ -1,0 +1,24 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TF	transferrin [Source:HGNC Symbol;Acc:HGNC:11740]	9	0.4761580526828766	0.054101147	Yes	
+row_1	YWHAE	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein epsilon [Source:HGNC Symbol;Acc:HGNC:12851]	16	0.4097476005554199	0.10459523	Yes	
+row_2	SERPINA1	serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941]	23	0.3746103346347809	0.14959782	Yes	
+row_3	YWHAZ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta [Source:HGNC Symbol;Acc:HGNC:12855]	48	0.29230356216430664	0.1411049	Yes	
+row_4	CTSZ	cathepsin Z [Source:HGNC Symbol;Acc:HGNC:2547]	52	0.26116859912872314	0.17515008	Yes	
+row_5	VTA1	vesicle trafficking 1 [Source:HGNC Symbol;Acc:HGNC:20954]	63	0.24025307595729828	0.19012508	Yes	
+row_6	CTSC	cathepsin C [Source:HGNC Symbol;Acc:HGNC:2528]	90	0.19371294975280762	0.16170909	Yes	
+row_7	DYNC1H1	dynein cytoplasmic 1 heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:2961]	91	0.19371294975280762	0.19198385	Yes	
+row_8	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	112	0.17565980553627014	0.1742904	No	
+row_9	LRP2	LDL receptor related protein 2 [Source:HGNC Symbol;Acc:HGNC:6694]	141	0.06480099260807037	0.12121252	No	
+row_10	GNS	glucosamine (N-acetyl)-6-sulfatase [Source:HGNC Symbol;Acc:HGNC:4422]	150	0.03302637115120888	0.108315416	No	
+row_11	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	173	0.0	0.05865401	No	
+row_12	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	0.023901619	No	
+row_13	FOLR1	folate receptor alpha [Source:HGNC Symbol;Acc:HGNC:3791]	222	-0.16756562888622284	-0.010858184	No	
+row_14	EGF	epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]	229	-0.18214283883571625	0.0040643015	No	
+row_15	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	266	-0.19371294975280762	-0.04692505	No	
+row_16	CHMP5	charged multivesicular body protein 5 [Source:HGNC Symbol;Acc:HGNC:26942]	295	-0.24025307595729828	-0.07258211	No	
+row_17	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	363	-0.359403133392334	-0.16765372	No	
+row_18	MAN1A1	mannosidase alpha class 1A member 1 [Source:HGNC Symbol;Acc:HGNC:6821]	371	-0.3834083676338196	-0.12353344	No	
+row_19	CTTN	cortactin [Source:HGNC Symbol;Acc:HGNC:3338]	382	-0.41311725974082947	-0.081542075	No	
+row_20	LMAN2	"lectin, mannose binding 2 [Source:HGNC Symbol;Acc:HGNC:16986]"	401	-0.5053980350494385	-0.043187134	No	
+row_21	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	0.02777235	No	
+row_22	CD59	CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689]	435	-0.6311374306678772	0.06771999	No	
