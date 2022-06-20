@@ -1,0 +1,37 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+KRT9,keratin 9 [Source:HGNC Symbol;Acc:HGNC:6447],2,0.551,0.0333,No
+CASP14,caspase 14 [Source:HGNC Symbol;Acc:HGNC:1502],3,0.548,0.0711,No
+KRT77,keratin 77 [Source:HGNC Symbol;Acc:HGNC:20411],12,0.438,0.0827,No
+KRT8,keratin 8 [Source:HGNC Symbol;Acc:HGNC:6446],32,0.343,0.0622,No
+KRT10,keratin 10 [Source:HGNC Symbol;Acc:HGNC:6413],66,0.231,0.0014,No
+SPRR2E,small proline rich protein 2E [Source:HGNC Symbol;Acc:HGNC:11265],161,0.000,-0.2172,No
+KLK13,kallikrein related peptidase 13 [Source:HGNC Symbol;Acc:HGNC:6361],167,0.000,-0.2289,No
+KRT6B,keratin 6B [Source:HGNC Symbol;Acc:HGNC:6444],170,0.000,-0.2335,No
+KRT72,keratin 72 [Source:HGNC Symbol;Acc:HGNC:28932],171,0.000,-0.2335,No
+DSG3,desmoglein 3 [Source:HGNC Symbol;Acc:HGNC:3050],187,-0.043,-0.2655,No
+IVL,involucrin [Source:HGNC Symbol;Acc:HGNC:6187],197,-0.077,-0.2811,No
+CSTA,cystatin A [Source:HGNC Symbol;Acc:HGNC:2481],255,-0.194,-0.4003,No
+KRT80,keratin 80 [Source:HGNC Symbol;Acc:HGNC:27056],267,-0.194,-0.4125,No
+KRT2,keratin 2 [Source:HGNC Symbol;Acc:HGNC:6439],273,-0.203,-0.4102,No
+SPRR3,small proline rich protein 3 [Source:HGNC Symbol;Acc:HGNC:11268],299,-0.246,-0.4514,No
+KRT78,keratin 78 [Source:HGNC Symbol;Acc:HGNC:28926],302,-0.249,-0.4388,No
+KRT1,keratin 1 [Source:HGNC Symbol;Acc:HGNC:6412],340,-0.327,-0.5023,Yes
+SPINK5,serine peptidase inhibitor Kazal type 5 [Source:HGNC Symbol;Acc:HGNC:15464],341,-0.335,-0.4793,Yes
+TGM1,transglutaminase 1 [Source:HGNC Symbol;Acc:HGNC:11777],349,-0.343,-0.4719,Yes
+SPRR2A,small proline rich protein 2A [Source:HGNC Symbol;Acc:HGNC:11261],360,-0.353,-0.4708,Yes
+KRT73,keratin 73 [Source:HGNC Symbol;Acc:HGNC:28928],365,-0.367,-0.4548,Yes
+PI3,peptidase inhibitor 3 [Source:HGNC Symbol;Acc:HGNC:8947],383,-0.419,-0.4655,Yes
+KRT15,keratin 15 [Source:HGNC Symbol;Acc:HGNC:6421],414,-0.553,-0.4971,Yes
+KRT16,keratin 16 [Source:HGNC Symbol;Acc:HGNC:6423],416,-0.558,-0.4610,Yes
+SPRR2F,small proline rich protein 2F [Source:HGNC Symbol;Acc:HGNC:11266],419,-0.567,-0.4266,Yes
+SPRR2B,small proline rich protein 2B [Source:HGNC Symbol;Acc:HGNC:11262],423,-0.587,-0.3931,Yes
+KRT19,keratin 19 [Source:HGNC Symbol;Acc:HGNC:6436],426,-0.597,-0.3566,Yes
+DSC2,desmocollin 2 [Source:HGNC Symbol;Acc:HGNC:3036],429,-0.617,-0.3187,Yes
+SPRR1B,small proline rich protein 1B [Source:HGNC Symbol;Acc:HGNC:11260],434,-0.629,-0.2847,Yes
+KRT4,keratin 4 [Source:HGNC Symbol;Acc:HGNC:6441],438,-0.647,-0.2470,Yes
+SPRR1A,small proline rich protein 1A [Source:HGNC Symbol;Acc:HGNC:11259],439,-0.660,-0.2015,Yes
+KRT5,keratin 5 [Source:HGNC Symbol;Acc:HGNC:6442],441,-0.674,-0.1573,Yes
+KRT6C,keratin 6C [Source:HGNC Symbol;Acc:HGNC:20406],443,-0.686,-0.1124,Yes
+KRT74,keratin 74 [Source:HGNC Symbol;Acc:HGNC:28929],445,-0.694,-0.0669,Yes
+KRT13,keratin 13 [Source:HGNC Symbol;Acc:HGNC:6415],450,-0.745,-0.0248,Yes
+KRT6A,keratin 6A [Source:HGNC Symbol;Acc:HGNC:6443],457,-0.832,0.0186,Yes
