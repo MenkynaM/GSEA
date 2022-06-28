@@ -1,0 +1,17 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+YWHAE,tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein epsilon [Source:HGNC Symbol;Acc:HGNC:12851],16,0.410,0.0588,Yes
+PRDX1,peroxiredoxin 1 [Source:HGNC Symbol;Acc:HGNC:9352],20,0.383,0.1404,Yes
+ZNF233,zinc finger protein 233 [Source:HGNC Symbol;Acc:HGNC:30946],39,0.322,0.1745,Yes
+YWHAZ,tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta [Source:HGNC Symbol;Acc:HGNC:12855],48,0.292,0.2241,Yes
+RETN,resistin [Source:HGNC Symbol;Acc:HGNC:20389],54,0.252,0.2710,Yes
+AIFM2,apoptosis inducing factor mitochondria associated 2 [Source:HGNC Symbol;Acc:HGNC:21411],79,0.194,0.2623,Yes
+H2BC3,H2B clustered histone 3 [Source:HGNC Symbol;Acc:HGNC:4751],92,0.194,0.2803,Yes
+PRDX2,peroxiredoxin 2 [Source:HGNC Symbol;Acc:HGNC:9353],124,0.125,0.2402,No
+APOE,apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613],163,0.000,0.1557,No
+UBA52,ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458],194,-0.067,0.1044,No
+IGFBP3,insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472],271,-0.202,-0.0180,No
+NOTCH3,notch receptor 3 [Source:HGNC Symbol;Acc:HGNC:7883],289,-0.240,-0.0005,No
+TXN,thioredoxin [Source:HGNC Symbol;Acc:HGNC:12435],342,-0.338,-0.0382,No
+THBS1,thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785],369,-0.381,-0.0084,No
+SPP1,secreted phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11255],376,-0.398,0.0698,No
+SERPINB13,serpin family B member 13 [Source:HGNC Symbol;Acc:HGNC:8944],410,-0.546,0.1222,No

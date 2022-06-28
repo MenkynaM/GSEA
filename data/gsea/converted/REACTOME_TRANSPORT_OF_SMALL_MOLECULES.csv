@@ -1,0 +1,28 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+APOA1,apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600],7,0.495,0.0548,Yes
+TF,transferrin [Source:HGNC Symbol;Acc:HGNC:11740],9,0.476,0.1204,Yes
+A2M,alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7],10,0.470,0.1874,Yes
+APOA2,apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601],21,0.383,0.2194,Yes
+APOA4,apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602],30,0.343,0.2501,Yes
+AZGP1,"alpha-2-glycoprotein 1, zinc-binding [Source:HGNC Symbol;Acc:HGNC:910]",37,0.338,0.2846,Yes
+HBA1,hemoglobin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:4823],49,0.287,0.3005,Yes
+HBB,hemoglobin subunit beta [Source:HGNC Symbol;Acc:HGNC:4827],56,0.246,0.3219,Yes
+SLC44A4,solute carrier family 44 member 4 [Source:HGNC Symbol;Acc:HGNC:13941],60,0.240,0.3493,Yes
+CREB3L3,cAMP responsive element binding protein 3 like 3 [Source:HGNC Symbol;Acc:HGNC:18855],73,0.194,0.3497,Yes
+NPC2,NPC intracellular cholesterol transporter 2 [Source:HGNC Symbol;Acc:HGNC:14537],86,0.194,0.3500,Yes
+AQP1,aquaporin 1 (Colton blood group) [Source:HGNC Symbol;Acc:HGNC:633],88,0.194,0.3753,Yes
+LPA,lipoprotein(a) [Source:HGNC Symbol;Acc:HGNC:6667],99,0.194,0.3802,Yes
+CA1,carbonic anhydrase 1 [Source:HGNC Symbol;Acc:HGNC:1368],104,0.194,0.3987,Yes
+ABCF1,ATP binding cassette subfamily F member 1 [Source:HGNC Symbol;Acc:HGNC:70],107,0.194,0.4218,Yes
+ALB,albumin [Source:HGNC Symbol;Acc:HGNC:399],116,0.148,0.4247,Yes
+CP,ceruloplasmin [Source:HGNC Symbol;Acc:HGNC:2295],143,0.056,0.3734,No
+APOE,apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613],163,0.000,0.3302,No
+UBA52,ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458],194,-0.067,0.2713,No
+CUBN,cubilin [Source:HGNC Symbol;Acc:HGNC:2548],198,-0.086,0.2767,No
+SLC28A1,solute carrier family 28 member 1 [Source:HGNC Symbol;Acc:HGNC:11001],209,-0.136,0.2733,No
+ATP6AP1,ATPase H+ transporting accessory protein 1 [Source:HGNC Symbol;Acc:HGNC:868],261,-0.194,0.1848,No
+LCN2,lipocalin 2 [Source:HGNC Symbol;Acc:HGNC:6526],300,-0.246,0.1333,No
+LCAT,lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522],338,-0.322,0.0949,No
+FXYD2,FXYD domain containing ion transport regulator 2 [Source:HGNC Symbol;Acc:HGNC:4026],348,-0.343,0.1234,No
+APOD,apolipoprotein D [Source:HGNC Symbol;Acc:HGNC:612],359,-0.349,0.1503,No
+PIP,prolactin induced protein [Source:HGNC Symbol;Acc:HGNC:8993],431,-0.623,0.0774,No

@@ -1,0 +1,12 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+GAPDH,glyceraldehyde-3-phosphate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4141],11,0.447,0.1946,Yes
+PKM,pyruvate kinase M1/2 [Source:HGNC Symbol;Acc:HGNC:9021],31,0.343,0.3207,Yes
+ALDOC,"aldolase, fructose-bisphosphate C [Source:HGNC Symbol;Acc:HGNC:418]",33,0.343,0.4863,Yes
+GOT1,glutamic-oxaloacetic transaminase 1 [Source:HGNC Symbol;Acc:HGNC:4432],58,0.240,0.5511,Yes
+ENO1,enolase 1 [Source:HGNC Symbol;Acc:HGNC:3350],109,0.188,0.5334,Yes
+ALDOB,"aldolase, fructose-bisphosphate B [Source:HGNC Symbol;Acc:HGNC:417]",118,0.145,0.5867,Yes
+ENO3,enolase 3 [Source:HGNC Symbol;Acc:HGNC:3354],138,0.087,0.5875,Yes
+PGK1,phosphoglycerate kinase 1 [Source:HGNC Symbol;Acc:HGNC:8896],147,0.044,0.5913,Yes
+FBP1,fructose-bisphosphatase 1 [Source:HGNC Symbol;Acc:HGNC:3606],174,0.000,0.5342,No
+TPI1,triosephosphate isomerase 1 [Source:HGNC Symbol;Acc:HGNC:12009],195,-0.071,0.5249,No
+ALDOA,"aldolase, fructose-bisphosphate A [Source:HGNC Symbol;Acc:HGNC:414]",211,-0.136,0.5582,No
