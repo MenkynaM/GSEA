@@ -34,9 +34,18 @@ def get_pathway_list():
     
 
 
+def find_files(filename):
+   result = []
+   for root, _, files in os.walk(os.getcwd()):
+      if filename in files:
+         result.append(root)
+   return result
+
+
 
 if __name__ == '__main__':
     # scrape_file('REACTOME_FORMATION_OF_THE_CORNIFIED_ENVELOPE.html')
     flist = get_pathway_list()
+    print(find_files('index.html'))
     for file in flist:
         scrape_file(file + '.html')
