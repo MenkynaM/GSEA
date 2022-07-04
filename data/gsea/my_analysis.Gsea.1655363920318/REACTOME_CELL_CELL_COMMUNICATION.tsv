@@ -1,0 +1,14 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KIRREL1	kirre like nephrin family adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:15734]	62	0.24025307595729828	-0.073565446	No	
+row_1	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	112	0.17565980553627014	-0.13545182	No	
+row_2	ACTN1	actinin alpha 1 [Source:HGNC Symbol;Acc:HGNC:163]	120	0.13552618026733398	-0.11519705	No	
+row_3	CDH1	cadherin 1 [Source:HGNC Symbol;Acc:HGNC:1748]	177	-0.01239912398159504	-0.23555054	No	
+row_4	PVR	PVR cell adhesion molecule [Source:HGNC Symbol;Acc:HGNC:9705]	191	-0.05732160061597824	-0.2491455	No	
+row_5	CDH13	cadherin 13 [Source:HGNC Symbol;Acc:HGNC:1753]	217	-0.14403080940246582	-0.26638508	No	
+row_6	NECTIN2	nectin cell adhesion molecule 2 [Source:HGNC Symbol;Acc:HGNC:9707]	272	-0.20178043842315674	-0.33242694	No	
+row_7	NECTIN4	nectin cell adhesion molecule 4 [Source:HGNC Symbol;Acc:HGNC:19688]	281	-0.21804895997047424	-0.29263723	No	
+row_8	CDH11	cadherin 11 [Source:HGNC Symbol;Acc:HGNC:1750]	344	-0.340299129486084	-0.3398434	Yes	
+row_9	CADM1	cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:5951]	355	-0.3430342376232147	-0.27153862	Yes	
+row_10	CDH2	cadherin 2 [Source:HGNC Symbol;Acc:HGNC:1759]	389	-0.4654833972454071	-0.22174458	Yes	
+row_11	KRT5	keratin 5 [Source:HGNC Symbol;Acc:HGNC:6442]	441	-0.6743589639663696	-0.15665282	Yes	
+row_12	SIRPA	signal regulatory protein alpha [Source:HGNC Symbol;Acc:HGNC:9662]	456	-0.7872781753540039	0.019867647	Yes	

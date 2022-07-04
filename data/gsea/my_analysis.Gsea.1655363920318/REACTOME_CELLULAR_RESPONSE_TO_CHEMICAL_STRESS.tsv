@@ -1,0 +1,12 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PRDX1	peroxiredoxin 1 [Source:HGNC Symbol;Acc:HGNC:9352]	20	0.3834083676338196	0.09301352	Yes	
+row_1	GSTP1	glutathione S-transferase pi 1 [Source:HGNC Symbol;Acc:HGNC:4638]	45	0.3091617226600647	0.15071182	Yes	
+row_2	SOD1	superoxide dismutase 1 [Source:HGNC Symbol;Acc:HGNC:11179]	47	0.3058677017688751	0.25778282	Yes	
+row_3	HBA1	hemoglobin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:4823]	49	0.2872796058654785	0.35821334	Yes	
+row_4	HBB	hemoglobin subunit beta [Source:HGNC Symbol;Acc:HGNC:4827]	56	0.24573661386966705	0.43281397	Yes	
+row_5	ALB	albumin [Source:HGNC Symbol;Acc:HGNC:399]	116	0.14769475162029266	0.3559064	No	
+row_6	PRDX2	peroxiredoxin 2 [Source:HGNC Symbol;Acc:HGNC:9353]	124	0.1251135915517807	0.3852176	No	
+row_7	SOD3	superoxide dismutase 3 [Source:HGNC Symbol;Acc:HGNC:11181]	148	0.034655842930078506	0.3470487	No	
+row_8	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	0.2719071	No	
+row_9	TXN	thioredoxin [Source:HGNC Symbol;Acc:HGNC:12435]	342	-0.3379543721675873	0.06956164	No	
+row_10	GPX3	glutathione peroxidase 3 [Source:HGNC Symbol;Acc:HGNC:4555]	415	-0.5558423399925232	0.109890096	No	

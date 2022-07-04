@@ -1,0 +1,12 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GAPDH	glyceraldehyde-3-phosphate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4141]	11	0.44716981053352356	0.17547749	Yes	
+row_1	PRDX1	peroxiredoxin 1 [Source:HGNC Symbol;Acc:HGNC:9352]	20	0.3834083676338196	0.32908005	Yes	
+row_2	GOT1	glutamic-oxaloacetic transaminase 1 [Source:HGNC Symbol;Acc:HGNC:4432]	58	0.24025307595729828	0.35503006	Yes	
+row_3	CTSC	cathepsin C [Source:HGNC Symbol;Acc:HGNC:2528]	90	0.19371294975280762	0.37338755	Yes	
+row_4	ENO1	enolase 1 [Source:HGNC Symbol;Acc:HGNC:3350]	109	0.1884685605764389	0.41797492	Yes	
+row_5	PGK1	phosphoglycerate kinase 1 [Source:HGNC Symbol;Acc:HGNC:8896]	147	0.04376888647675514	0.35619825	No	
+row_6	CD9	CD9 molecule [Source:HGNC Symbol;Acc:HGNC:1709]	176	0.0	0.2946598	No	
+row_7	TPI1	triosephosphate isomerase 1 [Source:HGNC Symbol;Acc:HGNC:12009]	195	-0.07083357870578766	0.28672528	No	
+row_8	ALDOA	"aldolase, fructose-bisphosphate A [Source:HGNC Symbol;Acc:HGNC:414]"	211	-0.13552618026733398	0.31426826	No	
+row_9	GLRX	glutaredoxin [Source:HGNC Symbol;Acc:HGNC:4330]	248	-0.19371294975280762	0.32163674	No	
+row_10	GLA	galactosidase alpha [Source:HGNC Symbol;Acc:HGNC:4296]	353	-0.3428772985935211	0.24615386	No	

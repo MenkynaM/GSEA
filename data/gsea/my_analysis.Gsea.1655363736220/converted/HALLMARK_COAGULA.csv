@@ -1,0 +1,33 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+HRG,histidine rich glycoprotein [Source:HGNC Symbol;Acc:HGNC:5181],1,0.556,0.0545,Yes
+APOA1,apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600],7,0.495,0.0937,Yes
+TF,transferrin [Source:HGNC Symbol;Acc:HGNC:11740],9,0.476,0.1401,Yes
+A2M,alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7],10,0.470,0.1881,Yes
+SERPINC1,serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775],19,0.391,0.2096,Yes
+SERPINA1,serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941],23,0.375,0.2410,Yes
+CPQ,carboxypeptidase Q [Source:HGNC Symbol;Acc:HGNC:16910],28,0.359,0.2686,Yes
+LAMP2,lysosomal associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:6501],36,0.339,0.2871,Yes
+ANXA1,annexin A1 [Source:HGNC Symbol;Acc:HGNC:533],46,0.307,0.2977,Yes
+CLU,clusterin [Source:HGNC Symbol;Acc:HGNC:2095],115,0.148,0.1562,No
+C3,complement C3 [Source:HGNC Symbol;Acc:HGNC:1318],137,0.093,0.1173,No
+CTSB,cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527],139,0.084,0.1237,No
+CTSH,cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535],142,0.063,0.1255,No
+FGG,fibrinogen gamma chain [Source:HGNC Symbol;Acc:HGNC:3694],149,0.034,0.1152,No
+CD9,CD9 molecule [Source:HGNC Symbol;Acc:HGNC:1709],176,0.000,0.0553,No
+CFI,complement factor I [Source:HGNC Symbol;Acc:HGNC:5394],216,-0.142,-0.0200,No
+PLG,plasminogen [Source:HGNC Symbol;Acc:HGNC:9071],226,-0.178,-0.0225,No
+COMP,cartilage oligomeric matrix protein [Source:HGNC Symbol;Acc:HGNC:2227],230,-0.184,-0.0107,No
+ITIH1,inter-alpha-trypsin inhibitor heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:6166],249,-0.194,-0.0323,No
+PLAU,"plasminogen activator, urokinase [Source:HGNC Symbol;Acc:HGNC:9052]",258,-0.194,-0.0310,No
+MMP9,matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176],262,-0.194,-0.0181,No
+FN1,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],284,-0.227,-0.0432,No
+SERPING1,serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228],303,-0.251,-0.0590,No
+THBD,thrombomodulin [Source:HGNC Symbol;Acc:HGNC:11784],305,-0.258,-0.0349,No
+FGA,fibrinogen alpha chain [Source:HGNC Symbol;Acc:HGNC:3661],312,-0.266,-0.0215,No
+PROZ,"protein Z, vitamin K dependent plasma glycoprotein [Source:HGNC Symbol;Acc:HGNC:9460]",315,-0.271,0.0016,No
+F2,"coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]",361,-0.354,-0.0659,No
+THBS1,thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785],369,-0.381,-0.0431,No
+MEP1A,meprin A subunit alpha [Source:HGNC Symbol;Acc:HGNC:7015],402,-0.515,-0.0642,No
+MASP2,MBL associated serine protease 2 [Source:HGNC Symbol;Acc:HGNC:6902],411,-0.548,-0.0265,No
+FBN1,fibrillin 1 [Source:HGNC Symbol;Acc:HGNC:3603],440,-0.667,-0.0228,No
+GSN,gelsolin [Source:HGNC Symbol;Acc:HGNC:4620],453,-0.764,0.0276,No

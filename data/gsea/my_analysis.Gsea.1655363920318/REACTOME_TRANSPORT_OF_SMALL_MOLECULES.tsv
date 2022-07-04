@@ -1,0 +1,28 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7	0.4954618811607361	0.05475664	Yes	
+row_1	TF	transferrin [Source:HGNC Symbol;Acc:HGNC:11740]	9	0.4761580526828766	0.12042607	Yes	
+row_2	A2M	alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7]	10	0.46952611207962036	0.18742703	Yes	
+row_3	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	21	0.3834083676338196	0.21936002	Yes	
+row_4	APOA4	apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602]	30	0.3428772985935211	0.2500651	Yes	
+row_5	AZGP1	"alpha-2-glycoprotein 1, zinc-binding [Source:HGNC Symbol;Acc:HGNC:910]"	37	0.337529718875885	0.28456283	Yes	
+row_6	HBA1	hemoglobin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:4823]	49	0.2872796058654785	0.30050045	Yes	
+row_7	HBB	hemoglobin subunit beta [Source:HGNC Symbol;Acc:HGNC:4827]	56	0.24573661386966705	0.3218994	Yes	
+row_8	SLC44A4	solute carrier family 44 member 4 [Source:HGNC Symbol;Acc:HGNC:13941]	60	0.24025307595729828	0.3493496	Yes	
+row_9	CREB3L3	cAMP responsive element binding protein 3 like 3 [Source:HGNC Symbol;Acc:HGNC:18855]	73	0.19371294975280762	0.34965742	Yes	
+row_10	NPC2	NPC intracellular cholesterol transporter 2 [Source:HGNC Symbol;Acc:HGNC:14537]	86	0.19371294975280762	0.3499652	Yes	
+row_11	AQP1	aquaporin 1 (Colton blood group) [Source:HGNC Symbol;Acc:HGNC:633]	88	0.19371294975280762	0.37533	Yes	
+row_12	LPA	lipoprotein(a) [Source:HGNC Symbol;Acc:HGNC:6667]	99	0.19371294975280762	0.38019362	Yes	
+row_13	CA1	carbonic anhydrase 1 [Source:HGNC Symbol;Acc:HGNC:1368]	104	0.19371294975280762	0.39872468	Yes	
+row_14	ABCF1	ATP binding cassette subfamily F member 1 [Source:HGNC Symbol;Acc:HGNC:70]	107	0.19371294975280762	0.42181152	Yes	
+row_15	ALB	albumin [Source:HGNC Symbol;Acc:HGNC:399]	116	0.14769475162029266	0.4246642	Yes	
+row_16	CP	ceruloplasmin [Source:HGNC Symbol;Acc:HGNC:2295]	143	0.05608357861638069	0.37344176	No	
+row_17	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	163	0.0	0.33016157	No	
+row_18	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	0.2713151	No	
+row_19	CUBN	cubilin [Source:HGNC Symbol;Acc:HGNC:2548]	198	-0.08593987673521042	0.27674493	No	
+row_20	SLC28A1	solute carrier family 28 member 1 [Source:HGNC Symbol;Acc:HGNC:11001]	209	-0.13552618026733398	0.27330536	No	
+row_21	ATP6AP1	ATPase H+ transporting accessory protein 1 [Source:HGNC Symbol;Acc:HGNC:868]	261	-0.19371294975280762	0.18477489	No	
+row_22	LCN2	lipocalin 2 [Source:HGNC Symbol;Acc:HGNC:6526]	300	-0.2459401935338974	0.13330998	No	
+row_23	LCAT	lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522]	338	-0.3217311501502991	0.094938256	No	
+row_24	FXYD2	FXYD domain containing ion transport regulator 2 [Source:HGNC Symbol;Acc:HGNC:4026]	348	-0.3428772985935211	0.1233654	No	
+row_25	APOD	apolipoprotein D [Source:HGNC Symbol;Acc:HGNC:612]	359	-0.3485585153102875	0.15032534	No	
+row_26	PIP	prolactin induced protein [Source:HGNC Symbol;Acc:HGNC:8993]	431	-0.6226707100868225	0.077448696	No	

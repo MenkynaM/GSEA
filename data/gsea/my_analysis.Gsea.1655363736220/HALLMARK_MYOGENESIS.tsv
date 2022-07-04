@@ -1,0 +1,21 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MYLK	myosin light chain kinase [Source:HGNC Symbol;Acc:HGNC:7590]	72	0.19371294975280762	-0.12722363	No	
+row_1	COL4A2	collagen type IV alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2203]	98	0.19371294975280762	-0.14906609	No	
+row_2	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	115	0.14819487929344177	-0.15876806	No	
+row_3	ENO3	enolase 3 [Source:HGNC Symbol;Acc:HGNC:3354]	138	0.08694153279066086	-0.1927408	No	
+row_4	SOD3	superoxide dismutase 3 [Source:HGNC Symbol;Acc:HGNC:11181]	148	0.034655842930078506	-0.20679966	No	
+row_5	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	155	0.0	-0.22025257	No	
+row_6	CDH13	cadherin 13 [Source:HGNC Symbol;Acc:HGNC:1753]	217	-0.14403080940246582	-0.3315868	No	
+row_7	GAA	alpha glucosidase [Source:HGNC Symbol;Acc:HGNC:4065]	233	-0.1927049309015274	-0.33118576	No	
+row_8	ATP6AP1	ATPase H+ transporting accessory protein 1 [Source:HGNC Symbol;Acc:HGNC:868]	261	-0.19371294975280762	-0.35751253	Yes	
+row_9	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	266	-0.19371294975280762	-0.3322698	Yes	
+row_10	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	271	-0.20178043842315674	-0.30560225	Yes	
+row_11	IGFBP7	insulin like growth factor binding protein 7 [Source:HGNC Symbol;Acc:HGNC:5476]	286	-0.23015721142292023	-0.29634467	Yes	
+row_12	TPM3	tropomyosin 3 [Source:HGNC Symbol;Acc:HGNC:12012]	318	-0.27908313274383545	-0.31656295	Yes	
+row_13	APOD	apolipoprotein D [Source:HGNC Symbol;Acc:HGNC:612]	359	-0.3485585153102875	-0.34469065	Yes	
+row_14	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	366	-0.369714617729187	-0.29284883	Yes	
+row_15	COL15A1	collagen type XV alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2192]	385	-0.4330539107322693	-0.25672656	Yes	
+row_16	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	-0.21056251	Yes	
+row_17	GPX3	glutathione peroxidase 3 [Source:HGNC Symbol;Acc:HGNC:4555]	415	-0.5558423399925232	-0.12584893	Yes	
+row_18	COL6A3	collagen type VI alpha 3 chain [Source:HGNC Symbol;Acc:HGNC:2213]	417	-0.5583490133285522	-0.0294819	Yes	
+row_19	GSN	gelsolin [Source:HGNC Symbol;Acc:HGNC:4620]	453	-0.7636272311210632	0.026905823	Yes	

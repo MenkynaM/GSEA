@@ -1,0 +1,13 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	19	0.39058732986450195	0.07862251	No	
+row_1	CTSZ	cathepsin Z [Source:HGNC Symbol;Acc:HGNC:2547]	52	0.26116859912872314	0.088692755	No	
+row_2	BMPR2	bone morphogenetic protein receptor type 2 [Source:HGNC Symbol;Acc:HGNC:1078]	84	0.19371294975280762	0.08015963	No	
+row_3	IL4R	interleukin 4 receptor [Source:HGNC Symbol;Acc:HGNC:6015]	96	0.19371294975280762	0.11567936	No	
+row_4	ENO3	enolase 3 [Source:HGNC Symbol;Acc:HGNC:3354]	138	0.08694153279066086	0.052187234	No	
+row_5	ECM1	extracellular matrix protein 1 [Source:HGNC Symbol;Acc:HGNC:3153]	164	0.0	-0.002878841	No	
+row_6	MUC1	"mucin 1, cell surface associated [Source:HGNC Symbol;Acc:HGNC:7508]"	175	0.0	-0.024905272	No	
+row_7	CD44	CD44 molecule (Indian blood group) [Source:HGNC Symbol;Acc:HGNC:1681]	180	-0.02198762074112892	-0.026933983	No	
+row_8	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	366	-0.369714617729187	-0.3203882	Yes	
+row_9	SPP1	secreted phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11255]	376	-0.39751994609832764	-0.21760097	Yes	
+row_10	COL6A1	collagen type VI alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2211]	432	-0.6237465739250183	-0.146358	Yes	
+row_11	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	447	-0.7030303478240967	0.039647635	Yes	

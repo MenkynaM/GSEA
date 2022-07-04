@@ -1,0 +1,41 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7	0.4954618811607361	0.019217892	No	
+row_1	C4A	complement C4A (Rodgers blood group) [Source:HGNC Symbol;Acc:HGNC:1323]	8	0.47735795378685	0.053565085	No	
+row_2	TF	transferrin [Source:HGNC Symbol;Acc:HGNC:11740]	9	0.4761580526828766	0.08782594	No	
+row_3	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	19	0.39058732986450195	0.09480299	No	
+row_4	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	21	0.3834083676338196	0.12004284	No	
+row_5	SERPINA1	serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941]	23	0.3746103346347809	0.14464964	No	
+row_6	GOLM1	golgi membrane protein 1 [Source:HGNC Symbol;Acc:HGNC:15451]	27	0.35975444316864014	0.1634927	No	
+row_7	GPC3	glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451]	65	0.23193790018558502	0.09332679	No	
+row_8	NUCB1	nucleobindin 1 [Source:HGNC Symbol;Acc:HGNC:8043]	80	0.19371294975280762	0.07440111	No	
+row_9	ALB	albumin [Source:HGNC Symbol;Acc:HGNC:399]	116	0.14769475162029266	0.002868518	No	
+row_10	KLK1	kallikrein 1 [Source:HGNC Symbol;Acc:HGNC:6357]	127	0.11498793214559555	-0.012331969	No	
+row_11	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	137	0.09349644929170609	-0.02673141	No	
+row_12	CP	ceruloplasmin [Source:HGNC Symbol;Acc:HGNC:2295]	143	0.05608357861638069	-0.034433134	No	
+row_13	FGG	fibrinogen gamma chain [Source:HGNC Symbol;Acc:HGNC:3694]	149	0.034282755106687546	-0.043703485	No	
+row_14	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	163	0.0	-0.07421992	No	
+row_15	KLK13	kallikrein related peptidase 13 [Source:HGNC Symbol;Acc:HGNC:6361]	167	0.0	-0.08126217	No	
+row_16	IGFBP2	insulin like growth factor binding protein 2 [Source:HGNC Symbol;Acc:HGNC:5471]	218	-0.15511830151081085	-0.18747188	No	
+row_17	PAPPA2	pappalysin 2 [Source:HGNC Symbol;Acc:HGNC:14615]	220	-0.15811388194561005	-0.17844258	No	
+row_18	CST3	cystatin C [Source:HGNC Symbol;Acc:HGNC:2475]	221	-0.16005319356918335	-0.16692632	No	
+row_19	PLG	plasminogen [Source:HGNC Symbol;Acc:HGNC:9071]	226	-0.17843712866306305	-0.16347696	No	
+row_20	IGFALS	insulin like growth factor binding protein acid labile subunit [Source:HGNC Symbol;Acc:HGNC:5468]	241	-0.19371294975280762	-0.18240264	No	
+row_21	MELTF	melanotransferrin [Source:HGNC Symbol;Acc:HGNC:7037]	259	-0.19371294975280762	-0.20837058	No	
+row_22	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	271	-0.20178043842315674	-0.21967353	No	
+row_23	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	284	-0.22745375335216522	-0.23147663	No	
+row_24	IGFBP7	insulin like growth factor binding protein 7 [Source:HGNC Symbol;Acc:HGNC:5476]	286	-0.23015721142292023	-0.21726362	No	
+row_25	SPARCL1	SPARC like 1 [Source:HGNC Symbol;Acc:HGNC:11220]	288	-0.24025307595729828	-0.20232418	No	
+row_26	FGA	fibrinogen alpha chain [Source:HGNC Symbol;Acc:HGNC:3661]	312	-0.2659088373184204	-0.23718193	No	
+row_27	F2	"coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]"	361	-0.35386425256729126	-0.3243965	Yes	
+row_28	TNC	tenascin C [Source:HGNC Symbol;Acc:HGNC:5318]	364	-0.36165329813957214	-0.3030694	Yes	
+row_29	SPP1	secreted phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11255]	376	-0.39751994609832764	-0.30028838	Yes	
+row_30	CDH2	cadherin 2 [Source:HGNC Symbol;Acc:HGNC:1759]	389	-0.4654833972454071	-0.2949646	Yes	
+row_31	MXRA8	matrix remodeling associated 8 [Source:HGNC Symbol;Acc:HGNC:7542]	397	-0.49872586131095886	-0.27551186	Yes	
+row_32	CHGB	chromogranin B [Source:HGNC Symbol;Acc:HGNC:1930]	398	-0.5004968047142029	-0.23949976	Yes	
+row_33	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	-0.22172204	Yes	
+row_34	SHISA5	shisa family member 5 [Source:HGNC Symbol;Acc:HGNC:30376]	413	-0.5507541298866272	-0.19148345	Yes	
+row_35	AHSG	alpha 2-HS glycoprotein [Source:HGNC Symbol;Acc:HGNC:349]	428	-0.6091373562812805	-0.18051822	Yes	
+row_36	FBN1	fibrillin 1 [Source:HGNC Symbol;Acc:HGNC:3603]	440	-0.6674237847328186	-0.15831688	Yes	
+row_37	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	447	-0.7030303478240967	-0.121816464	Yes	
+row_38	KNG1	kininogen 1 [Source:HGNC Symbol;Acc:HGNC:6383]	451	-0.7560971975326538	-0.074455485	Yes	
+row_39	QSOX1	quiescin sulfhydryl oxidase 1 [Source:HGNC Symbol;Acc:HGNC:9756]	465	-1.4588981866836548	-2.5588088E-7	Yes	

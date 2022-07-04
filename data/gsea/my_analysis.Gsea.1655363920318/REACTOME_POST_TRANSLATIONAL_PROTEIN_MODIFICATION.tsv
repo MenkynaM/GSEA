@@ -1,0 +1,67 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7	0.4954618811607361	0.0059627765	No	
+row_1	C4A	complement C4A (Rodgers blood group) [Source:HGNC Symbol;Acc:HGNC:1323]	8	0.47735795378685	0.028568234	No	
+row_2	TF	transferrin [Source:HGNC Symbol;Acc:HGNC:11740]	9	0.4761580526828766	0.051116873	No	
+row_3	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	19	0.39058732986450195	0.047113277	No	
+row_4	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	21	0.3834083676338196	0.06276972	No	
+row_5	SERPINA1	serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941]	23	0.3746103346347809	0.07800952	No	
+row_6	GOLM1	golgi membrane protein 1 [Source:HGNC Symbol;Acc:HGNC:15451]	27	0.35975444316864014	0.08754583	No	
+row_7	CTSA	cathepsin A [Source:HGNC Symbol;Acc:HGNC:9251]	51	0.2680804431438446	0.042740874	No	
+row_8	CTSZ	cathepsin Z [Source:HGNC Symbol;Acc:HGNC:2547]	52	0.26116859912872314	0.055108607	No	
+row_9	GPC3	glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451]	65	0.23193790018558502	0.03609211	No	
+row_10	FUCA1	alpha-L-fucosidase 1 [Source:HGNC Symbol;Acc:HGNC:4006]	75	0.19371294975280762	0.022765456	No	
+row_11	B4GAT1	"beta-1,4-glucuronyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:15685]"	76	0.19371294975280762	0.031938802	No	
+row_12	NUCB1	nucleobindin 1 [Source:HGNC Symbol;Acc:HGNC:8043]	80	0.19371294975280762	0.033612147	No	
+row_13	CTSC	cathepsin C [Source:HGNC Symbol;Acc:HGNC:2528]	90	0.19371294975280762	0.020285496	No	
+row_14	DYNC1H1	dynein cytoplasmic 1 heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:2961]	91	0.19371294975280762	0.029458843	No	
+row_15	H2BC3	H2B clustered histone 3 [Source:HGNC Symbol;Acc:HGNC:4751]	92	0.19371294975280762	0.038632188	No	
+row_16	GLB1	galactosidase beta 1 [Source:HGNC Symbol;Acc:HGNC:4298]	111	0.17899495363235474	0.0021085604	No	
+row_17	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	112	0.17565980553627014	0.010426994	No	
+row_18	ALB	albumin [Source:HGNC Symbol;Acc:HGNC:399]	116	0.14769475162029266	0.009921132	No	
+row_19	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	137	0.09349644929170609	-0.035651308	No	
+row_20	CP	ceruloplasmin [Source:HGNC Symbol;Acc:HGNC:2295]	143	0.05608357861638069	-0.04549545	No	
+row_21	FGG	fibrinogen gamma chain [Source:HGNC Symbol;Acc:HGNC:3694]	149	0.034282755106687546	-0.05637198	No	
+row_22	PSCA	prostate stem cell antigen [Source:HGNC Symbol;Acc:HGNC:9500]	158	0.0	-0.076371975	No	
+row_23	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	163	0.0	-0.08637198	No	
+row_24	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	173	0.0	-0.108871974	No	
+row_25	MUC1	"mucin 1, cell surface associated [Source:HGNC Symbol;Acc:HGNC:7508]"	175	0.0	-0.11137198	No	
+row_26	MUC5B	"mucin 5B, oligomeric mucus/gel-forming [Source:HGNC Symbol;Acc:HGNC:7516]"	188	-0.046309422701597214	-0.13917898	No	
+row_27	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.14852946	No	
+row_28	CST3	cystatin C [Source:HGNC Symbol;Acc:HGNC:2475]	221	-0.16005319356918335	-0.20595008	No	
+row_29	FOLR1	folate receptor alpha [Source:HGNC Symbol;Acc:HGNC:3791]	222	-0.16756562888622284	-0.19801494	No	
+row_30	ARSA	arylsulfatase A [Source:HGNC Symbol;Acc:HGNC:713]	223	-0.16779093444347382	-0.19006915	No	
+row_31	TTLL7	tubulin tyrosine ligase like 7 [Source:HGNC Symbol;Acc:HGNC:26242]	239	-0.19371294975280762	-0.2183958	No	
+row_32	RTN4RL2	reticulon 4 receptor like 2 [Source:HGNC Symbol;Acc:HGNC:23053]	247	-0.19371294975280762	-0.22672245	No	
+row_33	MELTF	melanotransferrin [Source:HGNC Symbol;Acc:HGNC:7037]	259	-0.19371294975280762	-0.2450491	No	
+row_34	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	271	-0.20178043842315674	-0.26299372	No	
+row_35	FCGR3B	Fc fragment of IgG receptor IIIb [Source:HGNC Symbol;Acc:HGNC:3620]	274	-0.20393763482570648	-0.2583362	No	
+row_36	UMOD	uromodulin [Source:HGNC Symbol;Acc:HGNC:12559]	277	-0.2126782089471817	-0.25326473	No	
+row_37	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	284	-0.22745375335216522	-0.2574936	No	
+row_38	LYPD3	LY6/PLAUR domain containing 3 [Source:HGNC Symbol;Acc:HGNC:24880]	285	-0.22872580587863922	-0.24666218	No	
+row_39	IGFBP7	insulin like growth factor binding protein 7 [Source:HGNC Symbol;Acc:HGNC:5476]	286	-0.23015721142292023	-0.235763	No	
+row_40	SPARCL1	SPARC like 1 [Source:HGNC Symbol;Acc:HGNC:11220]	288	-0.24025307595729828	-0.22688574	No	
+row_41	FGA	fibrinogen alpha chain [Source:HGNC Symbol;Acc:HGNC:3661]	312	-0.2659088373184204	-0.2717935	No	
+row_42	PROZ	"protein Z, vitamin K dependent plasma glycoprotein [Source:HGNC Symbol;Acc:HGNC:9460]"	315	-0.27105236053466797	-0.26395774	No	
+row_43	CPM	carboxypeptidase M [Source:HGNC Symbol;Acc:HGNC:2311]	346	-0.34172359108924866	-0.3227753	Yes	
+row_44	B4GALT1	"beta-1,4-galactosyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:924]"	351	-0.3428772985935211	-0.3165382	Yes	
+row_45	DAG1	dystroglycan 1 [Source:HGNC Symbol;Acc:HGNC:2666]	357	-0.3434707224369049	-0.31277305	Yes	
+row_46	F2	"coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]"	361	-0.35386425256729126	-0.30351567	Yes	
+row_47	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	363	-0.359403133392334	-0.288996	Yes	
+row_48	TNC	tenascin C [Source:HGNC Symbol;Acc:HGNC:5318]	364	-0.36165329813957214	-0.27186978	Yes	
+row_49	THBS1	thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785]	369	-0.38052985072135925	-0.26384965	Yes	
+row_50	MAN1A1	mannosidase alpha class 1A member 1 [Source:HGNC Symbol;Acc:HGNC:6821]	371	-0.3834083676338196	-0.2481932	Yes	
+row_51	SPP1	secreted phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11255]	376	-0.39751994609832764	-0.23936851	Yes	
+row_52	CDH2	cadherin 2 [Source:HGNC Symbol;Acc:HGNC:1759]	389	-0.4654833972454071	-0.24732538	Yes	
+row_53	MXRA8	matrix remodeling associated 8 [Source:HGNC Symbol;Acc:HGNC:7542]	397	-0.49872586131095886	-0.24120803	Yes	
+row_54	CHGB	chromogranin B [Source:HGNC Symbol;Acc:HGNC:1930]	398	-0.5004968047142029	-0.21750683	Yes	
+row_55	LMAN2	"lectin, mannose binding 2 [Source:HGNC Symbol;Acc:HGNC:16986]"	401	-0.5053980350494385	-0.19857353	Yes	
+row_56	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	-0.1879687	Yes	
+row_57	THY1	Thy-1 cell surface antigen [Source:HGNC Symbol;Acc:HGNC:11801]	412	-0.5482311248779297	-0.16950701	Yes	
+row_58	SHISA5	shisa family member 5 [Source:HGNC Symbol;Acc:HGNC:30376]	413	-0.5507541298866272	-0.14342585	Yes	
+row_59	OPCML	opioid binding protein/cell adhesion molecule like [Source:HGNC Symbol;Acc:HGNC:8143]	420	-0.5786490440368652	-0.13102372	Yes	
+row_60	AHSG	alpha 2-HS glycoprotein [Source:HGNC Symbol;Acc:HGNC:349]	428	-0.6091373562812805	-0.1196778	Yes	
+row_61	CD59	CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689]	435	-0.6311374306678772	-0.10479006	Yes	
+row_62	FBN1	fibrillin 1 [Source:HGNC Symbol;Acc:HGNC:3603]	440	-0.6674237847328186	-0.08318397	Yes	
+row_63	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	447	-0.7030303478240967	-0.06489171	Yes	
+row_64	KNG1	kininogen 1 [Source:HGNC Symbol;Acc:HGNC:6383]	451	-0.7560971975326538	-0.036586452	Yes	
+row_65	QSOX1	quiescin sulfhydryl oxidase 1 [Source:HGNC Symbol;Acc:HGNC:9756]	465	-1.4588981866836548	1.960434E-7	Yes	

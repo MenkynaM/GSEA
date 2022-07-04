@@ -1,0 +1,12 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ANXA1	annexin A1 [Source:HGNC Symbol;Acc:HGNC:533]	46	0.3068426251411438	-0.022164684	No	
+row_1	SOD1	superoxide dismutase 1 [Source:HGNC Symbol;Acc:HGNC:11179]	47	0.3058677017688751	0.056518745	No	
+row_2	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	115	0.14819487929344177	-0.05261138	No	
+row_3	HSPB1	heat shock protein family B (small) member 1 [Source:HGNC Symbol;Acc:HGNC:5246]	132	0.10540925711393356	-0.060660046	No	
+row_4	CD44	CD44 molecule (Indian blood group) [Source:HGNC Symbol;Acc:HGNC:1681]	180	-0.02198762074112892	-0.1583005	No	
+row_5	TGFBR3	transforming growth factor beta receptor 3 [Source:HGNC Symbol;Acc:HGNC:11774]	263	-0.19371294975280762	-0.2886883	No	
+row_6	F2	"coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]"	361	-0.35386425256729126	-0.41084474	Yes	
+row_7	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	408	-0.5406954288482666	-0.3728516	Yes	
+row_8	GPX3	glutathione peroxidase 3 [Source:HGNC Symbol;Acc:HGNC:4555]	415	-0.5558423399925232	-0.24304986	Yes	
+row_9	CD14	CD14 molecule [Source:HGNC Symbol;Acc:HGNC:1628]	425	-0.5912763476371765	-0.11072626	Yes	
+row_10	GSN	gelsolin [Source:HGNC Symbol;Acc:HGNC:4620]	453	-0.7636272311210632	0.026373597	Yes	

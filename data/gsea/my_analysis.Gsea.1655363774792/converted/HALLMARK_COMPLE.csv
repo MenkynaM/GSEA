@@ -1,0 +1,30 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+SERPINC1,serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775],19,0.391,0.0142,Yes
+SERPINA1,serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941],23,0.375,0.0627,Yes
+CPQ,carboxypeptidase Q [Source:HGNC Symbol;Acc:HGNC:16910],28,0.359,0.1066,Yes
+APOA4,apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602],30,0.343,0.1549,Yes
+LAMP2,lysosomal associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:6501],36,0.339,0.1935,Yes
+PFN1,profilin 1 [Source:HGNC Symbol;Acc:HGNC:8881],89,0.194,0.1031,No
+CTSC,cathepsin C [Source:HGNC Symbol;Acc:HGNC:2528],90,0.194,0.1317,No
+COL4A2,collagen type IV alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2203],98,0.194,0.1443,No
+S100A9,S100 calcium binding protein A9 [Source:HGNC Symbol;Acc:HGNC:10499],114,0.172,0.1354,No
+CLU,clusterin [Source:HGNC Symbol;Acc:HGNC:2095],115,0.148,0.1573,No
+KLK1,kallikrein 1 [Source:HGNC Symbol;Acc:HGNC:6357],127,0.115,0.1491,No
+C3,complement C3 [Source:HGNC Symbol;Acc:HGNC:1318],137,0.093,0.1423,No
+CTSB,cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527],139,0.084,0.1524,No
+PRCP,prolylcarboxypeptidase [Source:HGNC Symbol;Acc:HGNC:9344],140,0.073,0.1632,No
+CTSH,cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535],142,0.063,0.1702,No
+CP,ceruloplasmin [Source:HGNC Symbol;Acc:HGNC:2295],143,0.056,0.1785,No
+LTF,lactotransferrin [Source:HGNC Symbol;Acc:HGNC:6720],182,-0.031,0.0961,No
+CTSD,cathepsin D [Source:HGNC Symbol;Acc:HGNC:2529],184,-0.033,0.0987,No
+CDH13,cadherin 13 [Source:HGNC Symbol;Acc:HGNC:1753],217,-0.144,0.0468,No
+PLG,plasminogen [Source:HGNC Symbol;Acc:HGNC:9071],226,-0.178,0.0548,No
+ANXA5,annexin A5 [Source:HGNC Symbol;Acc:HGNC:543],235,-0.194,0.0651,No
+ITIH1,inter-alpha-trypsin inhibitor heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:6166],249,-0.194,0.0640,No
+FN1,fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778],284,-0.227,0.0197,No
+SERPING1,serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228],303,-0.251,0.0157,No
+CPM,carboxypeptidase M [Source:HGNC Symbol;Acc:HGNC:2311],346,-0.342,-0.0300,No
+F2,"coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]",361,-0.354,-0.0098,No
+CD55,CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665],363,-0.359,0.0410,No
+CD59,CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689],435,-0.631,-0.0283,No
+CDA,cytidine deaminase [Source:HGNC Symbol;Acc:HGNC:1712],436,-0.641,0.0664,No

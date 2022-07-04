@@ -1,0 +1,12 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGHV3-7	immunoglobulin heavy variable 3-7 [Source:HGNC Symbol;Acc:HGNC:5620]	4	0.5455996990203857	0.21951431	Yes	
+row_1	IGLV3-21	immunoglobulin lambda variable 3-21 [Source:HGNC Symbol;Acc:HGNC:5905]	40	0.3217311501502991	0.27721924	Yes	
+row_2	IGHV3-23	immunoglobulin heavy variable 3-23 [Source:HGNC Symbol;Acc:HGNC:5588]	126	0.11588180810213089	0.13889663	No	
+row_3	IGHM	immunoglobulin heavy constant mu [Source:HGNC Symbol;Acc:HGNC:5541]	135	0.09498721361160278	0.1610615	No	
+row_4	IGKV3-15	immunoglobulin kappa variable 3-15 [Source:HGNC Symbol;Acc:HGNC:5816]	151	0.02968350425362587	0.14051549	No	
+row_5	IGKV3D-20	immunoglobulin kappa variable 3D-20 [Source:HGNC Symbol;Acc:HGNC:5825]	192	-0.06038494035601616	0.0778714	No	
+row_6	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	0.10350384	No	
+row_7	IGKV3-20	immunoglobulin kappa variable 3-20 [Source:HGNC Symbol;Acc:HGNC:5817]	212	-0.1367180496454239	0.1233507	No	
+row_8	IGKV1-33	immunoglobulin kappa variable 1-33 [Source:HGNC Symbol;Acc:HGNC:5737]	268	-0.19371294975280762	0.083530515	No	
+row_9	IGKV2-28	immunoglobulin kappa variable 2-28 [Source:HGNC Symbol;Acc:HGNC:5783]	345	-0.3415651321411133	0.059425052	No	
+row_10	IGKV3-11	immunoglobulin kappa variable 3-11 [Source:HGNC Symbol;Acc:HGNC:5815]	395	-0.48300623893737793	0.1538461	No	

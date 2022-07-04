@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GAPDH	glyceraldehyde-3-phosphate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4141]	11	0.44716981053352356	0.07932634	Yes	
+row_1	ALDOC	"aldolase, fructose-bisphosphate C [Source:HGNC Symbol;Acc:HGNC:418]"	33	0.3428772985935211	0.112040795	Yes	
+row_2	ANXA2	annexin A2 [Source:HGNC Symbol;Acc:HGNC:537]	44	0.31311604380607605	0.16244641	Yes	
+row_3	GPC3	glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451]	65	0.23193790018558502	0.17161256	Yes	
+row_4	ENO1	enolase 1 [Source:HGNC Symbol;Acc:HGNC:3350]	109	0.1884685605764389	0.11922109	Yes	
+row_5	ALDOB	"aldolase, fructose-bisphosphate B [Source:HGNC Symbol;Acc:HGNC:417]"	118	0.1448337435722351	0.13498744	Yes	
+row_6	ENO3	enolase 3 [Source:HGNC Symbol;Acc:HGNC:3354]	138	0.08694153279066086	0.1126895	Yes	
+row_7	CP	ceruloplasmin [Source:HGNC Symbol;Acc:HGNC:2295]	143	0.05608357861638069	0.116776355	Yes	
+row_8	PGK1	phosphoglycerate kinase 1 [Source:HGNC Symbol;Acc:HGNC:8896]	147	0.04376888647675514	0.120238066	Yes	
+row_9	FBP1	fructose-bisphosphatase 1 [Source:HGNC Symbol;Acc:HGNC:3606]	174	0.0	0.06207252	Yes	
+row_10	TPI1	triosephosphate isomerase 1 [Source:HGNC Symbol;Acc:HGNC:12009]	195	-0.07083357870578766	0.033793505	Yes	
+row_11	ALDOA	"aldolase, fructose-bisphosphate A [Source:HGNC Symbol;Acc:HGNC:414]"	211	-0.13552618026733398	0.031736553	Yes	
+row_12	GAA	alpha glucosidase [Source:HGNC Symbol;Acc:HGNC:4065]	233	-0.1927049309015274	0.029546734	Yes	
+row_13	HEXA	hexosaminidase subunit alpha [Source:HGNC Symbol;Acc:HGNC:4878]	234	-0.19371294975280762	0.074571066	Yes	
+row_14	GLRX	glutaredoxin [Source:HGNC Symbol;Acc:HGNC:4330]	248	-0.19371294975280762	0.09051263	Yes	
+row_15	GPC4	glypican 4 [Source:HGNC Symbol;Acc:HGNC:4452]	256	-0.19371294975280762	0.11987701	Yes	
+row_16	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	266	-0.19371294975280762	0.14476712	Yes	
+row_17	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	271	-0.20178043842315674	0.18271802	Yes	
+row_18	CCN5	cellular communication network factor 5 [Source:HGNC Symbol;Acc:HGNC:12770]	461	-1.071510672569275	0.0089484425	No	

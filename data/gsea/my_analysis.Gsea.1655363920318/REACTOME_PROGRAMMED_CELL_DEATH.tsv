@@ -1,0 +1,12 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	YWHAE	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein epsilon [Source:HGNC Symbol;Acc:HGNC:12851]	16	0.4097476005554199	0.09928094	No	
+row_1	YWHAZ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta [Source:HGNC Symbol;Acc:HGNC:12855]	48	0.29230356216430664	0.12705928	No	
+row_2	ELANE	"elastase, neutrophil expressed [Source:HGNC Symbol;Acc:HGNC:3309]"	70	0.20178043842315674	0.14711332	No	
+row_3	CDH1	cadherin 1 [Source:HGNC Symbol;Acc:HGNC:1748]	177	-0.01239912398159504	-0.08178533	No	
+row_4	DSG3	desmoglein 3 [Source:HGNC Symbol;Acc:HGNC:3050]	187	-0.04264329746365547	-0.0875735	No	
+row_5	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.07893776	No	
+row_6	SDCBP	syndecan binding protein [Source:HGNC Symbol;Acc:HGNC:10662]	206	-0.10540925711393356	-0.06852686	No	
+row_7	VIM	vimentin [Source:HGNC Symbol;Acc:HGNC:12692]	297	-0.24025307595729828	-0.18749757	Yes	
+row_8	PDCD6IP	programmed cell death 6 interacting protein [Source:HGNC Symbol;Acc:HGNC:8766]	335	-0.3217311501502991	-0.16325031	Yes	
+row_9	CD14	CD14 molecule [Source:HGNC Symbol;Acc:HGNC:1628]	425	-0.5912763476371765	-0.16484599	Yes	
+row_10	GSN	gelsolin [Source:HGNC Symbol;Acc:HGNC:4620]	453	-0.7636272311210632	0.0263736	Yes	

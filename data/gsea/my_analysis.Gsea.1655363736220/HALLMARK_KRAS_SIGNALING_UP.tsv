@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RETN	resistin [Source:HGNC Symbol;Acc:HGNC:20389]	54	0.25228264927864075	-0.06764762	No	
+row_1	FUCA1	alpha-L-fucosidase 1 [Source:HGNC Symbol;Acc:HGNC:4006]	75	0.19371294975280762	-0.07157365	No	
+row_2	H2BC3	H2B clustered histone 3 [Source:HGNC Symbol;Acc:HGNC:4751]	92	0.19371294975280762	-0.066551134	No	
+row_3	TFPI	tissue factor pathway inhibitor [Source:HGNC Symbol;Acc:HGNC:11760]	106	0.19371294975280762	-0.05481721	No	
+row_4	SERPINA3	serpin family A member 3 [Source:HGNC Symbol;Acc:HGNC:16]	113	0.17544303834438324	-0.031272933	No	
+row_5	PDCD1LG2	programmed cell death 1 ligand 2 [Source:HGNC Symbol;Acc:HGNC:18731]	210	-0.13552618026733398	-0.2174817	No	
+row_6	GLRX	glutaredoxin [Source:HGNC Symbol;Acc:HGNC:4330]	248	-0.19371294975280762	-0.25943905	Yes	
+row_7	PLAU	"plasminogen activator, urokinase [Source:HGNC Symbol;Acc:HGNC:9052]"	258	-0.19371294975280762	-0.23875658	Yes	
+row_8	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	262	-0.19371294975280762	-0.2046513	Yes	
+row_9	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	271	-0.20178043842315674	-0.1800318	Yes	
+row_10	SPARCL1	SPARC like 1 [Source:HGNC Symbol;Acc:HGNC:11220]	288	-0.24025307595729828	-0.16520296	Yes	
+row_11	RBP4	retinol binding protein 4 [Source:HGNC Symbol;Acc:HGNC:9922]	301	-0.24660193920135498	-0.14008781	Yes	
+row_12	GPRC5B	G protein-coupled receptor class C group 5 member B [Source:HGNC Symbol;Acc:HGNC:13308]	307	-0.26116859912872314	-0.09624341	Yes	
+row_13	PIGR	polymeric immunoglobulin receptor [Source:HGNC Symbol;Acc:HGNC:8968]	314	-0.27060839533805847	-0.052647114	Yes	
+row_14	TSPAN1	tetraspanin 1 [Source:HGNC Symbol;Acc:HGNC:20657]	317	-0.2762063145637512	0.0010772524	Yes	
+row_15	LCP1	lymphocyte cytosolic protein 1 [Source:HGNC Symbol;Acc:HGNC:6528]	339	-0.32460901141166687	0.022494819	Yes	
+row_16	APOD	apolipoprotein D [Source:HGNC Symbol;Acc:HGNC:612]	359	-0.3485585153102875	0.05343299	Yes	
+row_17	SPP1	secreted phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11255]	376	-0.39751994609832764	0.10139909	Yes	
+row_18	SLPI	secretory leukocyte peptidase inhibitor [Source:HGNC Symbol;Acc:HGNC:11092]	387	-0.45308855175971985	0.17449671	Yes	

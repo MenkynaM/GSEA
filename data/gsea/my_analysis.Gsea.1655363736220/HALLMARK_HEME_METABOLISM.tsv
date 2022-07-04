@@ -1,0 +1,13 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HBD	hemoglobin subunit delta [Source:HGNC Symbol;Acc:HGNC:4829]	25	0.36586225032806396	0.1171042	Yes	
+row_1	LAMP2	lysosomal associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:6501]	36	0.3386485278606415	0.25444162	Yes	
+row_2	HBB	hemoglobin subunit beta [Source:HGNC Symbol;Acc:HGNC:4827]	56	0.24573661386966705	0.32823202	Yes	
+row_3	CA1	carbonic anhydrase 1 [Source:HGNC Symbol;Acc:HGNC:1368]	104	0.19371294975280762	0.31586674	Yes	
+row_4	PRDX2	peroxiredoxin 2 [Source:HGNC Symbol;Acc:HGNC:9353]	124	0.1251135915517807	0.33289343	Yes	
+row_5	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	137	0.09349644929170609	0.35046	Yes	
+row_6	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	139	0.08440309017896652	0.3879764	Yes	
+row_7	BCAM	basal cell adhesion molecule (Lutheran blood group) [Source:HGNC Symbol;Acc:HGNC:6722]	152	0.0	0.3615447	Yes	
+row_8	SDCBP	syndecan binding protein [Source:HGNC Symbol;Acc:HGNC:10662]	206	-0.10540925711393356	0.29440892	Yes	
+row_9	ENDOD1	endonuclease domain containing 1 [Source:HGNC Symbol;Acc:HGNC:29129]	231	-0.18519386649131775	0.32869542	Yes	
+row_10	PGLS	6-phosphogluconolactonase [Source:HGNC Symbol;Acc:HGNC:8903]	246	-0.19371294975280762	0.38901734	Yes	
+row_11	ACSL6	acyl-CoA synthetase long chain family member 6 [Source:HGNC Symbol;Acc:HGNC:16496]	252	-0.19371294975280762	0.4691631	Yes	

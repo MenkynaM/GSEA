@@ -1,0 +1,13 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+TTR,transthyretin [Source:HGNC Symbol;Acc:HGNC:12405],6,0.495,0.1258,Yes
+APOA1,apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600],7,0.495,0.2648,Yes
+APOA2,apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601],21,0.383,0.3437,Yes
+APOA4,apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602],30,0.343,0.4222,Yes
+GPC3,glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451],65,0.232,0.4124,No
+LRP2,LDL receptor related protein 2 [Source:HGNC Symbol;Acc:HGNC:6694],141,0.065,0.2654,No
+AGRN,agrin [Source:HGNC Symbol;Acc:HGNC:329],155,0.000,0.2367,No
+APOE,apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613],163,0.000,0.2213,No
+SDC1,syndecan 1 [Source:HGNC Symbol;Acc:HGNC:10658],193,-0.061,0.1745,No
+GPC4,glypican 4 [Source:HGNC Symbol;Acc:HGNC:4452],256,-0.194,0.0923,No
+RBP4,retinol binding protein 4 [Source:HGNC Symbol;Acc:HGNC:9922],301,-0.247,0.0646,No
+HSPG2,heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273],460,-1.050,0.0110,No

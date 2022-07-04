@@ -1,0 +1,12 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+PRDX1,peroxiredoxin 1 [Source:HGNC Symbol;Acc:HGNC:9352],20,0.383,0.0930,Yes
+GSTP1,glutathione S-transferase pi 1 [Source:HGNC Symbol;Acc:HGNC:4638],45,0.309,0.1507,Yes
+SOD1,superoxide dismutase 1 [Source:HGNC Symbol;Acc:HGNC:11179],47,0.306,0.2578,Yes
+HBA1,hemoglobin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:4823],49,0.287,0.3582,Yes
+HBB,hemoglobin subunit beta [Source:HGNC Symbol;Acc:HGNC:4827],56,0.246,0.4328,Yes
+ALB,albumin [Source:HGNC Symbol;Acc:HGNC:399],116,0.148,0.3559,No
+PRDX2,peroxiredoxin 2 [Source:HGNC Symbol;Acc:HGNC:9353],124,0.125,0.3852,No
+SOD3,superoxide dismutase 3 [Source:HGNC Symbol;Acc:HGNC:11181],148,0.035,0.3470,No
+UBA52,ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458],194,-0.067,0.2719,No
+TXN,thioredoxin [Source:HGNC Symbol;Acc:HGNC:12435],342,-0.338,0.0696,No
+GPX3,glutathione peroxidase 3 [Source:HGNC Symbol;Acc:HGNC:4555],415,-0.556,0.1099,No

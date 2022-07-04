@@ -1,0 +1,59 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT9	keratin 9 [Source:HGNC Symbol;Acc:HGNC:6447]	2	0.5512030124664307	0.021798395	No	
+row_1	CASP14	caspase 14 [Source:HGNC Symbol;Acc:HGNC:1502]	3	0.5482311248779297	0.04835479	No	
+row_2	KRT77	keratin 77 [Source:HGNC Symbol;Acc:HGNC:20411]	12	0.4383458197116852	0.04998048	No	
+row_3	KRT8	keratin 8 [Source:HGNC Symbol;Acc:HGNC:6446]	32	0.3428772985935211	0.020020878	No	
+row_4	MSN	moesin [Source:HGNC Symbol;Acc:HGNC:7373]	42	0.3217311501502991	0.013546757	No	
+row_5	KRT10	keratin 10 [Source:HGNC Symbol;Acc:HGNC:6413]	66	0.23085972666740417	-0.031642914	No	
+row_6	PFN1	profilin 1 [Source:HGNC Symbol;Acc:HGNC:8881]	89	0.19371294975280762	-0.076181	No	
+row_7	H2BC3	H2B clustered histone 3 [Source:HGNC Symbol;Acc:HGNC:4751]	92	0.19371294975280762	-0.07169948	No	
+row_8	COL4A2	collagen type IV alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2203]	98	0.19371294975280762	-0.074570894	No	
+row_9	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	112	0.17565980553627014	-0.09792466	No	
+row_10	CNTN1	contactin 1 [Source:HGNC Symbol;Acc:HGNC:2171]	122	0.13552618026733398	-0.11341857	No	
+row_11	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	155	0.0	-0.19184995	No	
+row_12	SPRR2E	small proline rich protein 2E [Source:HGNC Symbol;Acc:HGNC:11265]	161	0.0	-0.20410486	No	
+row_13	KLK13	kallikrein related peptidase 13 [Source:HGNC Symbol;Acc:HGNC:6361]	167	0.0	-0.21635975	No	
+row_14	KRT6B	keratin 6B [Source:HGNC Symbol;Acc:HGNC:6444]	170	0.0	-0.22126171	No	
+row_15	KRT72	keratin 72 [Source:HGNC Symbol;Acc:HGNC:28932]	171	0.0	-0.22126171	No	
+row_16	CACNA1S	calcium voltage-gated channel subunit alpha1 S [Source:HGNC Symbol;Acc:HGNC:1397]	172	0.0	-0.22126171	No	
+row_17	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	173	0.0	-0.22126171	No	
+row_18	DSG3	desmoglein 3 [Source:HGNC Symbol;Acc:HGNC:3050]	187	-0.04264329746365547	-0.25105882	No	
+row_19	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	194	-0.06650812923908234	-0.26254302	No	
+row_20	IVL	involucrin [Source:HGNC Symbol;Acc:HGNC:6187]	197	-0.07673069834709167	-0.26372814	No	
+row_21	SDCBP	syndecan binding protein [Source:HGNC Symbol;Acc:HGNC:10662]	206	-0.10540925711393356	-0.27822995	No	
+row_22	CSTA	cystatin A [Source:HGNC Symbol;Acc:HGNC:2481]	255	-0.19371294975280762	-0.38649353	No	
+row_23	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	262	-0.19371294975280762	-0.39181593	No	
+row_24	THRAP3	thyroid hormone receptor associated protein 3 [Source:HGNC Symbol;Acc:HGNC:22964]	264	-0.19371294975280762	-0.38488343	No	
+row_25	MYH9	myosin heavy chain 9 [Source:HGNC Symbol;Acc:HGNC:7579]	266	-0.19371294975280762	-0.3779509	No	
+row_26	KRT80	keratin 80 [Source:HGNC Symbol;Acc:HGNC:27056]	267	-0.19371294975280762	-0.36856744	No	
+row_27	KRT2	keratin 2 [Source:HGNC Symbol;Acc:HGNC:6439]	273	-0.20303744077682495	-0.37098718	No	
+row_28	EFNB1	ephrin B1 [Source:HGNC Symbol;Acc:HGNC:3226]	292	-0.24025307595729828	-0.40346694	No	
+row_29	SPRR3	small proline rich protein 3 [Source:HGNC Symbol;Acc:HGNC:11268]	299	-0.24557262659072876	-0.40627724	No	
+row_30	KRT78	keratin 78 [Source:HGNC Symbol;Acc:HGNC:28926]	302	-0.24928347766399384	-0.39910388	No	
+row_31	KRT1	keratin 1 [Source:HGNC Symbol;Acc:HGNC:6412]	340	-0.3269822895526886	-0.47395107	Yes	
+row_32	SPINK5	serine peptidase inhibitor Kazal type 5 [Source:HGNC Symbol;Acc:HGNC:15464]	341	-0.334546834230423	-0.45774558	Yes	
+row_33	TGM1	transglutaminase 1 [Source:HGNC Symbol;Acc:HGNC:11777]	349	-0.3428772985935211	-0.4582934	Yes	
+row_34	DAG1	dystroglycan 1 [Source:HGNC Symbol;Acc:HGNC:2666]	357	-0.3434707224369049	-0.4588125	Yes	
+row_35	SPRR2A	small proline rich protein 2A [Source:HGNC Symbol;Acc:HGNC:11261]	360	-0.35304418206214905	-0.44661295	Yes	
+row_36	KRT73	keratin 73 [Source:HGNC Symbol;Acc:HGNC:28928]	365	-0.3674244284629822	-0.43861878	Yes	
+row_37	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	366	-0.369714617729187	-0.42070976	Yes	
+row_38	PI3	peptidase inhibitor 3 [Source:HGNC Symbol;Acc:HGNC:8947]	383	-0.41914138197898865	-0.4396222	Yes	
+row_39	CDH2	cadherin 2 [Source:HGNC Symbol;Acc:HGNC:1759]	389	-0.4654833972454071	-0.429329	Yes	
+row_40	KRT15	keratin 15 [Source:HGNC Symbol;Acc:HGNC:6421]	414	-0.552937388420105	-0.46136817	Yes	
+row_41	KRT16	keratin 16 [Source:HGNC Symbol;Acc:HGNC:6423]	416	-0.5580711960792542	-0.4367861	Yes	
+row_42	COL6A3	collagen type VI alpha 3 chain [Source:HGNC Symbol;Acc:HGNC:2213]	417	-0.5583490133285522	-0.40973958	Yes	
+row_43	SPRR2F	small proline rich protein 2F [Source:HGNC Symbol;Acc:HGNC:11266]	419	-0.5665698051452637	-0.38474584	Yes	
+row_44	SPRR2B	small proline rich protein 2B [Source:HGNC Symbol;Acc:HGNC:11262]	423	-0.5869113206863403	-0.3636687	Yes	
+row_45	KRT19	keratin 19 [Source:HGNC Symbol;Acc:HGNC:6436]	426	-0.5971938371658325	-0.33964252	Yes	
+row_46	DSC2	desmocollin 2 [Source:HGNC Symbol;Acc:HGNC:3036]	429	-0.6168133020401001	-0.31466594	Yes	
+row_47	COL6A1	collagen type VI alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2211]	432	-0.6237465739250183	-0.28935355	Yes	
+row_48	SPRR1B	small proline rich protein 1B [Source:HGNC Symbol;Acc:HGNC:11260]	434	-0.6288455128669739	-0.26134315	Yes	
+row_49	KRT4	keratin 4 [Source:HGNC Symbol;Acc:HGNC:6441]	438	-0.6473177671432495	-0.23733993	Yes	
+row_50	SPRR1A	small proline rich protein 1A [Source:HGNC Symbol;Acc:HGNC:11259]	439	-0.6602150201797485	-0.20535901	Yes	
+row_51	KRT5	keratin 5 [Source:HGNC Symbol;Acc:HGNC:6442]	441	-0.6743589639663696	-0.17514394	Yes	
+row_52	KRT6C	keratin 6C [Source:HGNC Symbol;Acc:HGNC:20406]	443	-0.6859889626502991	-0.14436552	Yes	
+row_53	ACVR1B	activin A receptor type 1B [Source:HGNC Symbol;Acc:HGNC:172]	444	-0.692038893699646	-0.110843055	Yes	
+row_54	KRT74	keratin 74 [Source:HGNC Symbol;Acc:HGNC:28929]	445	-0.6939780116081238	-0.07722665	Yes	
+row_55	KRT13	keratin 13 [Source:HGNC Symbol;Acc:HGNC:6415]	450	-0.7447651624679565	-0.050954044	Yes	
+row_56	KRT6A	keratin 6A [Source:HGNC Symbol;Acc:HGNC:6443]	457	-0.8324043154716492	-0.02533814	Yes	
+row_57	PTGDS	prostaglandin D2 synthase [Source:HGNC Symbol;Acc:HGNC:9592]	459	-0.8772662281990051	0.014705784	Yes	

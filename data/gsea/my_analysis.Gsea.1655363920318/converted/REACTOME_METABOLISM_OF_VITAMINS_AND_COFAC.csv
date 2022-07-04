@@ -1,0 +1,17 @@
+SYMBOL,TITLE,RANK IN GENE LIST,RANK METRIC SCORE,RUNNING ES,CORE ENRICHMENT
+TTR,transthyretin [Source:HGNC Symbol;Acc:HGNC:12405],6,0.495,0.1022,Yes
+APOA1,apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600],7,0.495,0.2176,Yes
+APOA2,apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601],21,0.383,0.2781,Yes
+APOA4,apolipoprotein A4 [Source:HGNC Symbol;Acc:HGNC:602],30,0.343,0.3403,Yes
+GPC3,glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451],65,0.232,0.3188,No
+LRP2,LDL receptor related protein 2 [Source:HGNC Symbol;Acc:HGNC:6694],141,0.065,0.1672,No
+AGRN,agrin [Source:HGNC Symbol;Acc:HGNC:329],155,0.000,0.1383,No
+APOE,apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613],163,0.000,0.1228,No
+SDC1,syndecan 1 [Source:HGNC Symbol;Acc:HGNC:10658],193,-0.061,0.0725,No
+CUBN,cubilin [Source:HGNC Symbol;Acc:HGNC:2548],198,-0.086,0.0837,No
+BTD,biotinidase [Source:HGNC Symbol;Acc:HGNC:1122],204,-0.105,0.0971,No
+GCHFR,GTP cyclohydrolase I feedback regulator [Source:HGNC Symbol;Acc:HGNC:4194],237,-0.194,0.0712,No
+GPC4,glypican 4 [Source:HGNC Symbol;Acc:HGNC:4452],256,-0.194,0.0763,No
+RBP4,retinol binding protein 4 [Source:HGNC Symbol;Acc:HGNC:9922],301,-0.247,0.0360,No
+CD320,CD320 molecule [Source:HGNC Symbol;Acc:HGNC:16692],343,-0.340,0.0242,No
+HSPG2,heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273],460,-1.050,0.0111,No

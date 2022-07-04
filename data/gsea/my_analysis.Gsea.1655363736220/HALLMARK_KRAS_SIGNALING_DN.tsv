@@ -1,0 +1,15 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GPRC5C	G protein-coupled receptor class C group 5 member C [Source:HGNC Symbol;Acc:HGNC:13309]	13	0.4287143051624298	0.056939412	No	
+row_1	TENM2	teneurin transmembrane protein 2 [Source:HGNC Symbol;Acc:HGNC:29943]	59	0.24025307595729828	0.0054087546	No	
+row_2	CALML5	calmodulin like 5 [Source:HGNC Symbol;Acc:HGNC:18180]	145	0.05257871001958847	-0.1721338	No	
+row_3	IGFBP2	insulin like growth factor binding protein 2 [Source:HGNC Symbol;Acc:HGNC:5471]	218	-0.15511830151081085	-0.3004175	No	
+row_4	TFF2	trefoil factor 2 [Source:HGNC Symbol;Acc:HGNC:11756]	227	-0.1801285445690155	-0.28210872	No	
+row_5	EGF	epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]	229	-0.18214283883571625	-0.24791056	No	
+row_6	LYPD3	LY6/PLAUR domain containing 3 [Source:HGNC Symbol;Acc:HGNC:24880]	285	-0.22872580587863922	-0.32386944	No	
+row_7	SPRR3	small proline rich protein 3 [Source:HGNC Symbol;Acc:HGNC:11268]	299	-0.24557262659072876	-0.30354023	No	
+row_8	KRT1	keratin 1 [Source:HGNC Symbol;Acc:HGNC:6412]	340	-0.3269822895526886	-0.3266717	Yes	
+row_9	TGM1	transglutaminase 1 [Source:HGNC Symbol;Acc:HGNC:11777]	349	-0.3428772985935211	-0.27582923	Yes	
+row_10	KRT15	keratin 15 [Source:HGNC Symbol;Acc:HGNC:6421]	414	-0.552937388420105	-0.30688936	Yes	
+row_11	KRT4	keratin 4 [Source:HGNC Symbol;Acc:HGNC:6441]	438	-0.6473177671432495	-0.22837475	Yes	
+row_12	KRT5	keratin 5 [Source:HGNC Symbol;Acc:HGNC:6442]	441	-0.6743589639663696	-0.097994395	Yes	
+row_13	KRT13	keratin 13 [Source:HGNC Symbol;Acc:HGNC:6415]	450	-0.7447651624679565	0.033185884	Yes	

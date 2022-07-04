@@ -1,0 +1,33 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HRG	histidine rich glycoprotein [Source:HGNC Symbol;Acc:HGNC:5181]	1	0.5558423399925232	0.054541744	Yes	
+row_1	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7	0.4954618811607361	0.0936918	Yes	
+row_2	TF	transferrin [Source:HGNC Symbol;Acc:HGNC:11740]	9	0.4761580526828766	0.14008425	Yes	
+row_3	A2M	alpha-2-macroglobulin [Source:HGNC Symbol;Acc:HGNC:7]	10	0.46952611207962036	0.1881026	Yes	
+row_4	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	19	0.39058732986450195	0.20961471	Yes	
+row_5	SERPINA1	serpin family A member 1 [Source:HGNC Symbol;Acc:HGNC:8941]	23	0.3746103346347809	0.2410136	Yes	
+row_6	CPQ	carboxypeptidase Q [Source:HGNC Symbol;Acc:HGNC:16910]	28	0.359403133392334	0.2685531	Yes	
+row_7	LAMP2	lysosomal associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:6501]	36	0.3386485278606415	0.28705758	Yes	
+row_8	ANXA1	annexin A1 [Source:HGNC Symbol;Acc:HGNC:533]	46	0.3068426251411438	0.297701	Yes	
+row_9	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	115	0.14819487929344177	0.15617484	No	
+row_10	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	137	0.09349644929170609	0.1173496	No	
+row_11	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	139	0.08440309017896652	0.12367734	No	
+row_12	CTSH	cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535]	142	0.06324554979801178	0.12553716	No	
+row_13	FGG	fibrinogen gamma chain [Source:HGNC Symbol;Acc:HGNC:3694]	149	0.034282755106687546	0.11521836	No	
+row_14	CD9	CD9 molecule [Source:HGNC Symbol;Acc:HGNC:1709]	176	0.0	0.055310532	No	
+row_15	CFI	complement factor I [Source:HGNC Symbol;Acc:HGNC:5394]	216	-0.1417974829673767	-0.020049617	No	
+row_16	PLG	plasminogen [Source:HGNC Symbol;Acc:HGNC:9071]	226	-0.17843712866306305	-0.02253821	No	
+row_17	COMP	cartilage oligomeric matrix protein [Source:HGNC Symbol;Acc:HGNC:2227]	230	-0.18357336521148682	-0.010676638	No	
+row_18	ITIH1	inter-alpha-trypsin inhibitor heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:6166]	249	-0.19371294975280762	-0.032340303	No	
+row_19	PLAU	"plasminogen activator, urokinase [Source:HGNC Symbol;Acc:HGNC:9052]"	258	-0.19371294975280762	-0.030962497	No	
+row_20	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	262	-0.19371294975280762	-0.018063951	No	
+row_21	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	284	-0.22745375335216522	-0.043189395	No	
+row_22	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	303	-0.2513008117675781	-0.058963563	No	
+row_23	THBD	thrombomodulin [Source:HGNC Symbol;Acc:HGNC:11784]	305	-0.25819888710975647	-0.03486176	No	
+row_24	FGA	fibrinogen alpha chain [Source:HGNC Symbol;Acc:HGNC:3661]	312	-0.2659088373184204	-0.021492194	No	
+row_25	PROZ	"protein Z, vitamin K dependent plasma glycoprotein [Source:HGNC Symbol;Acc:HGNC:9460]"	315	-0.27105236053466797	0.0016199867	No	
+row_26	F2	"coagulation factor II, thrombin [Source:HGNC Symbol;Acc:HGNC:3535]"	361	-0.35386425256729126	-0.06587702	No	
+row_27	THBS1	thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785]	369	-0.38052985072135925	-0.043089334	No	
+row_28	MEP1A	meprin A subunit alpha [Source:HGNC Symbol;Acc:HGNC:7015]	402	-0.5148944854736328	-0.064163886	No	
+row_29	MASP2	MBL associated serine protease 2 [Source:HGNC Symbol;Acc:HGNC:6902]	411	-0.5481523871421814	-0.026537625	No	
+row_30	FBN1	fibrillin 1 [Source:HGNC Symbol;Acc:HGNC:3603]	440	-0.6674237847328186	-0.022796445	No	
+row_31	GSN	gelsolin [Source:HGNC Symbol;Acc:HGNC:4620]	453	-0.7636272311210632	0.027649803	No	
