@@ -8,16 +8,23 @@ def scrape_file(dir: str, file: str) -> None:
     Searches .htlm file using BeautifulSoup to find a table of enrichment
     results which are then extracter into a .csv file.
     '''
+
+    # load <name of pathway>.html file into BS parser
     contents = open(os.path.join(dir, f'{file}.html'), 'r').read()
     soup = BeautifulSoup(contents, 'html.parser')
 
-
+    #find the enrichment result table and read the header
     div = soup.select('.richTable')[0]
     head = [col.text for col in div.select('th')[1:]]
+
+    # check if <dir>/converted exists, else create it
     new_dir = os.path.join(dir, 'converted')
     if not os.path.exists(new_dir):
         os.makedirs(new_dir)
     new_path = os.path.join(new_dir, f'{file}'[:-4] + '.csv')
+
+    # read the rest of the table and write into a new file with the
+    # same name except for the extension
     with open(new_path, 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
         writer.writerow(head)
@@ -25,7 +32,12 @@ def scrape_file(dir: str, file: str) -> None:
             writer.writerow([col.text.replace('"', '') for col in row.select('td')[1:]])
 
 
-def scrape_index(file):
+def scrape_index(file: str) -> None:
+    '''Function for extracting list of gene sets that might interesting to us
+    '''
+
+    # find all of the entries and open the corresponding .html files, parsing
+    # them using the `scrape_file` function
     cnts = open(file).read()
     soup = BeautifulSoup(cnts, 'html.parser')
     link = soup.select('a')[1].attrs['href']
@@ -37,12 +49,14 @@ def scrape_index(file):
     
 
 
-def find_files(filename):
-   result = []
-   for root, _, files in os.walk(os.getcwd()):
-      if filename in files:
-         result.append(os.path.join(root, filename))
-   return result
+def find_files(filename: str) -> None:
+    '''Searches for any file named `index.html` and parses them using `scrape_index` function
+    '''
+    result = []
+    for root, _, files in os.walk(os.getcwd()):
+        if filename in files:
+            result.append(os.path.join(root, filename))
+    return result
 
 
 
