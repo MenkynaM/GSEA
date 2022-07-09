@@ -84,18 +84,24 @@ def download_files(lst: list, url: str) -> None:
     os.chdir('../..')
 
 
+def scan_for_index() -> None:
+    dir_to_scan = os.path.join(os.getcwd(), 'data', 'results')
+    dir_list = os.scandir(dir_to_scan)
+    a = [dir for dir in dir_list if 'error' not in dir]
+
+
 if __name__ == '__main__':
     url = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
     # lst = get_file_list(url)
-    # lst = [item for item in get_file_list(url) if '7.5.1' in item]
-    # download_files(lst, url)
-    chips = [os.path.abspath(file) for file in os.scandir('data/chips')]
-    gmts = [os.path.abspath(file) for file in os.scandir('data/gmt')]
-    src_file = os.path.abspath('data/gct/skuska.gct')
-    cls_file = os.path.abspath('data/phenotypes/skuska.cls') + '#K_versus_P'
+    lst = [item for item in get_file_list(url) if '7.5.1' in item]
+    download_files(lst, url)
+    # chips = [os.path.abspath(file) for file in os.scandir('data/chips')]
+    # gmts = [os.path.abspath(file) for file in os.scandir('data/gmt')]
+    # src_file = os.path.abspath('data/gct/skuska.gct')
+    # cls_file = os.path.abspath('data/phenotypes/skuska.cls') + '#P_versus_K'
     # print(cls_file)
     
     # run_gsea(src_file, cls_file, gmts[0], chips[0])
-    for chip in chips:
-        for gmt in gmts:
-            run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
+    # for chip in chips:
+    #     for gmt in gmts:
+    #         run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
