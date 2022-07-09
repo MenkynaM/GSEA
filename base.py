@@ -3,6 +3,7 @@ import subprocess
 import requests
 from bs4 import BeautifulSoup
 
+
 DEFAULT_SETTINGS = [
     './gsea-cli.sh',            'GSEA',
     '-zip_report',              'false',
