@@ -2,7 +2,7 @@ import os
 import subprocess
 import requests
 from bs4 import BeautifulSoup
-from scrape import scrape_for_score
+# from scrape import scrape_for_score
 from paths import *
 
 DEFAULT_SETTINGS = [
@@ -38,9 +38,9 @@ def run_gsea(src: str, cls: str, gmx: str, chip: str) -> None:
     as inputs
     '''
     old_dir = os.getcwd()
-    os.chdir('/home/menkyna/Downloads/GSEA_Linux_4.2.3')
+    os.chdir(GSEA_PATH)
     subprocess.run(DEFAULT_SETTINGS +
-                   ['-res', src, '-cls', cls, '-gmx', gmx, '-chip', chip])
+                   ['-res', src, '-cls', cls, '-gmx', gmx, '-chip', chip], shell=True)
     os.chdir(old_dir)
 
 
@@ -55,8 +55,7 @@ def get_file_list(url: str) -> list:
     tmp = soup.select('a')
 
     # get their link attributes and return in the form of a list
-    a = [elem.attrs['href'] for elem in tmp if elem.text.startswith('H')]
-    return a
+    return [elem.attrs['href'] for elem in tmp if elem.text.startswith('H')]
 
 
 def download_files(lst: list, url: str) -> None:
@@ -69,7 +68,6 @@ def download_files(lst: list, url: str) -> None:
     os.chdir(CHIPS_DIR_PATH)
 
     # download all `*.chip` files from `lst` in `url`
-
     # WINDOWS
     if os.name == 'nt':
         for item in lst:
@@ -94,7 +92,7 @@ if __name__ == '__main__':
     gmts = [os.path.abspath(file) for file in os.scandir(GMT_DIR_PATH)]
     src_file = os.path.abspath(os.path.join(GCT_DIR_PATH, 'skuska.gct'))
     cls_file = os.path.abspath(os.path.join(PHENOTYPES_DIR_PATH, 'skuska.pcl')) + '#P_versus_K'
-    print(cls_file)
+    print(GSEA_PATH)
     
     run_gsea(src_file, cls_file, gmts[0], chips[0])
     for chip in chips:
