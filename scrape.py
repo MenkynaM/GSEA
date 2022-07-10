@@ -1,6 +1,8 @@
 import os
 from bs4 import BeautifulSoup
 import csv
+from paths import *
+
 
 def scrape_file(dir: str, file: str) -> None:
     '''Extract a enrichment table from a single pathway file.
@@ -70,5 +72,8 @@ def find_files(filename: str) -> None:
 
 if __name__ == '__main__':
     index_list = find_files('index.html')
+    dic = {}
     for file in index_list:
-        scrape_index(file)
+        dic[os.path.basename(file)] = scrape_for_score(file)
+        # scrape_index(file)
+    print(dic)

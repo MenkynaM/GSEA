@@ -3,7 +3,7 @@ import subprocess
 import requests
 from bs4 import BeautifulSoup
 from scrape import scrape_for_score
-
+from paths import *
 
 DEFAULT_SETTINGS = [
     './gsea-cli.sh',            'GSEA',
@@ -64,10 +64,9 @@ def download_files(lst: list, url: str) -> None:
     '''
 
     # create new directory, if nonexistent, and change there
-    new_dir = os.path.join(os.getcwd(), 'data', 'chips')
-    if not os.path.exists(new_dir):
-        os.makedirs(new_dir)
-    os.chdir(new_dir)
+    if not os.path.exists(CHIPS_DIR_PATH):
+        os.makedirs(CHIPS_DIR_PATH)
+    os.chdir(CHIPS_DIR_PATH)
 
     # download all `*.chip` files from `lst` in `url`
 
@@ -89,15 +88,15 @@ def download_files(lst: list, url: str) -> None:
 if __name__ == '__main__':
     url = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
     # lst = get_file_list(url)
-    lst = [item for item in get_file_list(url) if '7.5.1' in item]
-    download_files(lst, url)
-    # chips = [os.path.abspath(file) for file in os.scandir('data/chips')]
-    # gmts = [os.path.abspath(file) for file in os.scandir('data/gmt')]
-    # src_file = os.path.abspath('data/gct/skuska.gct')
-    # cls_file = os.path.abspath('data/phenotypes/skuska.cls') + '#P_versus_K'
-    # print(cls_file)
+    # lst = [item for item in get_file_list(url) if '7.5.1' in item]
+    # download_files(lst, url)
+    chips = [os.path.abspath(file) for file in os.scandir(CHIPS_DIR_PATH)]
+    gmts = [os.path.abspath(file) for file in os.scandir(GMT_DIR_PATH)]
+    src_file = os.path.abspath(os.path.join(GCT_DIR_PATH, 'skuska.gct'))
+    cls_file = os.path.abspath(os.path.join(PHENOTYPES_DIR_PATH, 'skuska.pcl')) + '#P_versus_K'
+    print(cls_file)
     
-    # run_gsea(src_file, cls_file, gmts[0], chips[0])
-    # for chip in chips:
-    #     for gmt in gmts:
-    #         run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
+    run_gsea(src_file, cls_file, gmts[0], chips[0])
+    for chip in chips:
+        for gmt in gmts:
+            run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
