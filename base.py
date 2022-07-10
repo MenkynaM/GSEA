@@ -2,6 +2,7 @@ import os
 import subprocess
 import requests
 from bs4 import BeautifulSoup
+from scrape import scrape_for_score
 
 
 DEFAULT_SETTINGS = [
@@ -19,9 +20,9 @@ DEFAULT_SETTINGS = [
     '-rnd_seed',                '143',
     '-rpt_label',               'my_analysis',
     '-set_min',                 '10',
-    '-create_svgs',             'true',
+    '-create_svgs',             'false',
     '-sort',                    'real',
-    '-create_gcts',             'true',
+    '-create_gcts',             'false',
     '-save_rnd_lists',          'false',
     '-median',                  'false',
     '-metric',                  'Signal2Noise',
@@ -83,11 +84,6 @@ def download_files(lst: list, url: str) -> None:
     # change the directory back
     os.chdir('../..')
 
-
-def scan_for_index() -> None:
-    dir_to_scan = os.path.join(os.getcwd(), 'data', 'results')
-    dir_list = os.scandir(dir_to_scan)
-    a = [dir for dir in dir_list if 'error' not in dir]
 
 
 if __name__ == '__main__':

@@ -46,6 +46,13 @@ def scrape_index(file: str) -> None:
     files = [cell.text for cell in soup.select('a')[::2]][:-1]
     for f in files:
         scrape_file(os.path.dirname(file), f)
+
+
+def scrape_for_score(file: str) -> int:
+    cnts = open(file).read()
+    soup = BeautifulSoup(cnts, 'html.parser')
+    lst = str(soup.select('li')[0]) 
+    return int(lst.split(' ')[9][12:])
     
 
 
