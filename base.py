@@ -2,8 +2,8 @@ import os
 import subprocess
 import requests
 from bs4 import BeautifulSoup
-# from scrape import scrape_for_score
 from paths import *
+from scrape import  get_phenotypes
 
 DEFAULT_SETTINGS = [
     './gsea-cli.sh',            'GSEA',
@@ -84,7 +84,7 @@ def download_files(lst: list, url: str) -> None:
 
 
 if __name__ == '__main__':
-    url = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
+    # url = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
     # lst = get_file_list(url)
     # lst = [item for item in get_file_list(url) if '7.5.1' in item]
     # download_files(lst, url)

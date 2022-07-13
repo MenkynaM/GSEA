@@ -51,11 +51,21 @@ def scrape_index(file: str) -> None:
 
 
 def scrape_for_score(file: str) -> int:
+    '''Scrapes `index.html` for a score that is the number of gene sets identified with
+    FDR < 25%
+    '''
     cnts = open(file).read()
     soup = BeautifulSoup(cnts, 'html.parser')
     lst = str(soup.select('li')[0]) 
     return int(lst.split(' ')[9][12:])
-    
+
+
+def get_phenotypes(file: str) -> list:
+    '''Gets a phenotypes list from `<filname>.cls`
+    '''
+    with open(file, "r") as f:
+        phenotypes = f.readlines()[1].strip().split(' ')[1:]
+    return phenotypes
 
 
 def find_files(filename: str) -> None:
@@ -77,3 +87,4 @@ if __name__ == '__main__':
         dic[os.path.basename(file)] = scrape_for_score(file)
         # scrape_index(file)
     print(dic)
+    print(get_phenotypes(r'data\phenotypes\skuska.cls'))
