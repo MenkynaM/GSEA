@@ -35,7 +35,7 @@ def scrape_file(dir: str, file: str) -> None:
 
 
 def scrape_index(file: str) -> None:
-    '''Function for extracting list of gene sets that might interesting to us
+    '''Function for extracting list of gene sets that might of interest to us
     '''
 
     # find all of the entries and open the corresponding .html files, parsing
@@ -65,7 +65,16 @@ def get_phenotypes(file: str) -> list:
     '''
     with open(file, "r") as f:
         phenotypes = f.readlines()[1].strip().split(' ')[1:]
-    return phenotypes
+    retval = []
+
+    # check if there is at least something in the phenotype list
+    if len(phenotypes) == 0: return ['Error when creating phenotypes']
+
+    # create all combinations among the phenotypes
+    retval = [item1 + '_versus_' + item2 for item1 in phenotypes for item2 in phenotypes if item1 != item2]
+    # and of each versus the rest
+    retval += [item + '_versus_REST' for item in phenotypes]
+    return retval
 
 
 def find_files(filename: str) -> None:
@@ -87,4 +96,4 @@ if __name__ == '__main__':
         dic[os.path.basename(file)] = scrape_for_score(file)
         # scrape_index(file)
     print(dic)
-    print(get_phenotypes(r'data\phenotypes\skuska.cls'))
+    print(get_phenotypes(r'data\phenotypes\sk.cls'))

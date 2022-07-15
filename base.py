@@ -82,7 +82,6 @@ def download_files(lst: list, url: str) -> None:
     os.chdir('../..')
 
 
-
 if __name__ == '__main__':
     # url = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
     # lst = get_file_list(url)
