@@ -51,6 +51,7 @@ if __name__ == "__main__":
     # sorted_proteins = sorted(global_tab.items(), key=lambda x: x[1], reverse=True)
     result_file = open('results.txt', 'w')
     for protein in proteins:
-        result_file.write('{0} \t\t\t {1}\n'.format(protein.name, protein.count))
+        result_file.write(f'{protein.name} \t\t\t {protein.count}')
+        # result_file.write('{0} \t\t\t {1}\n'.format(protein.name, protein.count))
     result_file.close()
     print(proteins)
