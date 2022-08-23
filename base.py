@@ -3,7 +3,6 @@ import subprocess
 import requests
 from bs4 import BeautifulSoup
 from paths import *
-from scrape import  get_phenotypes
 
 DEFAULT_SETTINGS = [
     './gsea-cli.sh',            'GSEA',
@@ -83,10 +82,6 @@ def download_files(lst: list, url: str) -> None:
 
 
 if __name__ == '__main__':
-    # url = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
-    # lst = get_file_list(url)
-    # lst = [item for item in get_file_list(url) if '7.5.1' in item]
-    # download_files(lst, url)
     chips = [os.path.abspath(file) for file in os.scandir(CHIPS_DIR_PATH)]
     gmts = [os.path.abspath(file) for file in os.scandir(GMT_DIR_PATH)]
     src_file = os.path.abspath(os.path.join(GCT_DIR_PATH, 'skuska.gct'))
