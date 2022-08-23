@@ -4,8 +4,12 @@ import requests
 from bs4 import BeautifulSoup
 from paths import *
 
+
+execution_file = 'gsea-cli.sh' if os.name == 'posix' else 'gsea-cli.bat'
+
+
 DEFAULT_SETTINGS = [
-    './gsea-cli.sh',            'GSEA',
+    execution_file,            'GSEA',
     '-zip_report',              'false',
     '-num',                     '100',
     '-scoring_scheme',          'weighted',
@@ -29,6 +33,7 @@ DEFAULT_SETTINGS = [
     '-rnd_type',                'no_balance',
     '-permute',                 'gene_set',
     '-collapse',                'Collapse',
+    '-out',                     os.path.join(os.getcwd(), 'data', 'gsea')
 ]
 
 
@@ -43,7 +48,7 @@ def run_gsea(src: str, cls: str, gmx: str, chip: str) -> None:
     os.chdir(old_dir)
 
 
-def get_file_list(url: str) -> list:
+def get_file_list(url=CHIP_DL_URL) -> list:
     '''Opens `https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/`
     to search for all Human_*.chip files and returns their list
     '''
@@ -88,7 +93,8 @@ if __name__ == '__main__':
     cls_file = os.path.abspath(os.path.join(PHENOTYPES_DIR_PATH, 'skuska.pcl')) + '#P_versus_K'
     print(GSEA_PATH)
     
+    # download_files(get_file_list(), CHIP_DL_URL)
     run_gsea(src_file, cls_file, gmts[0], chips[0])
-    for chip in chips:
-        for gmt in gmts:
-            run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
+    # for chip in chips:
+    #     for gmt in gmts:
+    #         run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
