@@ -20,7 +20,7 @@ DEFAULT_SETTINGS = [
     '-plot_top_x',              '50',
     '-nperm',                   '1000',
     '-order',                   'descending',
-    '-rnd_seed',                '143',
+    '-rnd_seed',                'timestamp',
     '-rpt_label',               'my_analysis',
     '-set_min',                 '10',
     '-create_svgs',             'false',
@@ -31,7 +31,7 @@ DEFAULT_SETTINGS = [
     '-metric',                  'Signal2Noise',
     '-make_sets',               'true',
     '-rnd_type',                'no_balance',
-    '-permute',                 'gene_set',
+    '-permute',                 'phenotype',
     '-collapse',                'Collapse',
     '-out',                     os.path.join(os.getcwd(), 'data', 'gsea')
 ]
@@ -91,10 +91,12 @@ if __name__ == '__main__':
     gmts = [os.path.abspath(file) for file in os.scandir(GMT_DIR_PATH)]
     src_file = os.path.abspath(os.path.join(GCT_DIR_PATH, 'skuska.gct'))
     cls_file = os.path.abspath(os.path.join(PHENOTYPES_DIR_PATH, 'skuska.pcl')) + '#P_versus_K'
-    print(GSEA_PATH)
     
+    # print('\n'.join('{} - {}'.format(*k) for k in enumerate(gmts)))
+
+    # print(GSEA_PATH)
     # download_files(get_file_list(), CHIP_DL_URL)
-    run_gsea(src_file, cls_file, gmts[0], chips[0])
+    run_gsea(src_file, cls_file, gmts[9], chips[29])
     # for chip in chips:
     #     for gmt in gmts:
     #         run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
