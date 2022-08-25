@@ -1,12 +1,15 @@
 import enum
 import os
 
-GCT_DIR_PATH = os.path.join(os.getcwd(), 'data', 'gct')
-CHIPS_DIR_PATH = os.path.join(os.getcwd(), 'data', 'chips')
-GMT_DIR_PATH = os.path.join(os.getcwd(), 'data', 'gmt')
-CONVERTED_DIR_PATH = os.path.join(os.getcwd(), 'data', 'converted')
-PHENOTYPES_DIR_PATH = os.path.join(os.getcwd(), 'data', 'phenotypes')
-TXT_DIR_PATH = os.path.join(os.getcwd(), 'data', 'txt')
+data_dir = os.path.join(os.getcwd(), 'data')
+
+GCT_DIR_PATH = os.path.join(data_dir, 'gct')
+CHIPS_DIR_PATH = os.path.join(data_dir, 'chips')
+GMT_DIR_PATH = os.path.join(data_dir, 'gmt')
+CONVERTED_DIR_PATH = os.path.join(data_dir, 'converted')
+PHENOTYPES_DIR_PATH = os.path.join(data_dir, 'phenotypes')
+TXT_DIR_PATH = os.path.join(data_dir, 'txt')
+RAW_DATA_PATH = os.path.join(data_dir, 'raw')
 
 
 # WINDOWS

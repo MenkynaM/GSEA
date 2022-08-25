@@ -1,39 +1,33 @@
 import os
+from paths import *
 
 
 def convert(file: str) -> None:
     '''Converts a file into its corresponding .csv counterpart
     '''
+    file_name = os.path.splitext(os.path.basename(file))[0] + '_conv.csv'
     with open(file, 'r') as f:
         text = ',"' + '","'.join([b.strip()
                                  for b in next(f).split(';')][1:]) + '"\n'
         for line in f:
             id, vals = line.split(';')[0], line.split(';')[1:]
             text = text + '"' + id + '",' + ','.join(vals)
-    new_dir = os.path.join(os.path.dirname(file), 'converted')
-    if not os.path.exists(new_dir):
-        os.makedirs(new_dir)
-    output = open(os.path.join(new_dir, f'{file}'[11:-6] + '_conv.csv'), 'w')
-    output.writelines(text)
-    output.close()
+    write_file(file_name, CONVERTED_DIR_PATH, text)
 
 
 def convert_to_txt(file):
+    file_name = os.path.splitext(os.path.basename(file))[0] + '.txt'
     with open(file, 'r') as f:
         text = 'NAME\tDESCRIPTION\t' + \
             '\t'.join([s.strip() for s in next(f).split(';')][1:]) + '\n'
         for line in f:
             cells = line.split(';')
             text = text + '\t'.join([cells[0]] + ['na'] + cells[1:])
-    new_dir = os.path.join(os.path.dirname(file), 'txt')
-    if not os.path.exists(new_dir):
-        os.makedirs(new_dir)
-    output = open(os.path.join(new_dir, f'{file}'[11:-6] + '.txt'), 'w')
-    output.writelines(text)
-    output.close()
+    write_file(file_name, TXT_DIR_PATH, text)
 
 
 def convert_to_gct(file):
+    file_name = os.path.splitext(os.path.basename(file))[0] + '.gct'
     nproteins = 0
     with open(file, 'r') as f:
         header = next(f).split(';')
@@ -44,19 +38,14 @@ def convert_to_gct(file):
             nproteins = nproteins + 1
             cells = line.split(';')
             text = text + '\t'.join([cells[0]] + ['na'] + cells[1:])
-    new_dir = os.path.join(os.path.dirname(file), 'gct')
     text = f'#1.2\n{nproteins}\t{nsamples}\n' + text
-    if not os.path.exists(new_dir):
-        os.makedirs(new_dir)
-    output = open(os.path.join(new_dir, f'{file}'[11:-6] + '.gct'), 'w')
-    output.writelines(text)
-    output.close()
+    write_file(file_name, GCT_DIR_PATH, text)
 
 
 def create_cls(file):
     '''Creates .cls file from a .csv obtained by running 
-
     '''
+    file_name = os.path.splitext(os.path.basename(file))[0] + '.cls'
     code_set = []
     with open(file, 'r') as f:
         header = next(f).split(';')
@@ -67,16 +56,18 @@ def create_cls(file):
             code, _ = get_sample_code(sample)
             if code not in code_set:
                 code_set = code_set + [code]
-            my_form[index] = code + ' '
+            my_form[index] = code
     my_form[-1] = my_form[-1].strip()
-    new_dir = os.path.join(os.path.dirname(file), 'phenotypes')
-    if not os.path.exists(new_dir):
-        os.makedirs(new_dir)
-    output = open(os.path.join(new_dir, f'{file}'[11:-6] + '.cls'), 'w')
-    output.writelines(f'{nsamples} {len(code_set)} 1\n')
-    output.writelines('# ' + ' '.join(code_set) + '\n')
-    output.writelines(my_form)
-    output.close()
+    my_form = f'{nsamples} {len(code_set)} 1\n' + '# ' + \
+        ' '.join(code_set) + '\n' + ' '.join(my_form)
+    write_file(file_name, PHENOTYPES_DIR_PATH, my_form)
+
+
+def write_file(file: str, dir: str, string: str) -> None:
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+    with open(os.path.join(dir, file), 'w') as f:
+        f.writelines(string)
 
 
 def get_sample_code(string: str) -> tuple:
@@ -90,8 +81,7 @@ def get_sample_code(string: str) -> tuple:
 
 
 if __name__ == "__main__":
-    directory = 'data'
-    for file in os.scandir(directory):
+    for file in os.scandir(RAW_DATA_PATH):
         if file.is_file():
             convert(file)
             create_cls(file)
