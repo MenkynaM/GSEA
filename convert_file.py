@@ -58,7 +58,7 @@ def create_cls(file):
                 code_set = code_set + [code]
             my_form[index] = code
     my_form[-1] = my_form[-1].strip()
-    my_form = f'{nsamples} {len(code_set)} 1\n' + '# ' + \
+    my_form = f'{nsamples} {len(code_set)} 1\n# ' + \
         ' '.join(code_set) + '\n' + ' '.join(my_form)
     write_file(file_name, PHENOTYPES_DIR_PATH, my_form)
 

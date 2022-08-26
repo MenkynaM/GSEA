@@ -33,7 +33,7 @@ DEFAULT_SETTINGS = [
     '-rnd_type',                'no_balance',
     '-permute',                 'phenotype',
     '-collapse',                'Collapse',
-    '-out',                     os.path.join(os.getcwd(), 'data', 'gsea')
+    '-out',                     os.path.join(DATA_DIR, 'gsea')
 ]
 
 
