@@ -44,7 +44,7 @@ def run_gsea(src: str, cls: str, gmx: str, chip: str) -> None:
     old_dir = os.getcwd()
     os.chdir(GSEA_PATH)
     subprocess.run(DEFAULT_SETTINGS +
-                   ['-res', src, '-cls', cls, '-gmx', gmx, '-chip', chip], shell=True)
+                   ['-res', src, '-cls', cls, '-gmx', gmx, '-chip', chip], shell=True, check=True)
     os.chdir(old_dir)
 
 
@@ -86,12 +86,13 @@ def download_files(lst: list, url: str) -> None:
     os.chdir('../..')
 
 
-if __name__ == '__main__':
+def main():
     chips = [os.path.abspath(file) for file in os.scandir(CHIPS_DIR_PATH)]
     gmts = [os.path.abspath(file) for file in os.scandir(GMT_DIR_PATH)]
     src_file = os.path.abspath(os.path.join(GCT_DIR_PATH, 'skuska.gct'))
-    cls_file = os.path.abspath(os.path.join(PHENOTYPES_DIR_PATH, 'skuska.pcl')) + '#P_versus_K'
-    
+    cls_file = os.path.abspath(os.path.join(
+        PHENOTYPES_DIR_PATH, 'skuska.pcl')) + '#P_versus_K'
+
     # print('\n'.join('{} - {}'.format(*k) for k in enumerate(gmts)))
 
     # print(GSEA_PATH)
@@ -100,3 +101,8 @@ if __name__ == '__main__':
     # for chip in chips:
     #     for gmt in gmts:
     #         run_gsea(src_file, cls=cls_file, gmx=gmt, chip=chip)
+
+
+if __name__ == '__main__':
+    main()
+    

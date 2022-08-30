@@ -9,7 +9,7 @@ CONVERTED_DIR_PATH = os.path.join(DATA_DIR, 'converted')
 PHENOTYPES_DIR_PATH = os.path.join(DATA_DIR, 'phenotypes')
 TXT_DIR_PATH = os.path.join(DATA_DIR, 'txt')
 RAW_DATA_PATH = os.path.join(DATA_DIR, 'raw')
-
+CHIP_DL_URL = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
 
 # WINDOWS
 if os.name == 'nt':
@@ -26,5 +26,3 @@ if os.name == 'nt':
 # LINUX
 if os.name == 'posix':
     GSEA_PATH = os.path.abspath(os.path.join('..', 'GSEA_4.2.3'))
-
-CHIP_DL_URL = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
