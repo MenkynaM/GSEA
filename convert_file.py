@@ -1,3 +1,4 @@
+from encodings import utf_8
 import os
 from paths import *
 
@@ -6,18 +7,20 @@ def convert(file: str) -> None:
     '''Converts a file into its corresponding .csv counterpart
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '_conv.csv'
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding=utf_8) as f:
         text = ',"' + '","'.join([b.strip()
                                  for b in next(f).split(';')][1:]) + '"\n'
         for line in f:
-            id, vals = line.split(';')[0], line.split(';')[1:]
-            text = text + '"' + id + '",' + ','.join(vals)
+            ids, vals = line.split(';')[0], line.split(';')[1:]
+            text = text + '"' + ids + '",' + ','.join(vals)
     write_file(file_name, CONVERTED_DIR_PATH, text)
 
 
 def convert_to_txt(file):
+    '''Converts a csv file into txt format
+    '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.txt'
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding=utf_8) as f:
         text = 'NAME\tDESCRIPTION\t' + \
             '\t'.join([s.strip() for s in next(f).split(';')][1:]) + '\n'
         for line in f:
@@ -27,9 +30,11 @@ def convert_to_txt(file):
 
 
 def convert_to_gct(file):
+    '''Converts a csv file into gct format
+    '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.gct'
     nproteins = 0
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding=utf_8) as f:
         header = next(f).split(';')
         nsamples = len(header) - 1
         text = 'NAME\tDESCRIPTION\t' + \
@@ -47,7 +52,7 @@ def create_cls(file):
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.cls'
     code_set = []
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding=utf_8) as f:
         header = next(f).split(';')
         samples = [s.strip() for s in header][1:]
         nsamples = len(samples)
@@ -64,13 +69,19 @@ def create_cls(file):
 
 
 def write_file(file: str, dir: str, string: str) -> None:
+    '''Temp function for writing into a file
+    '''
     if not os.path.exists(dir):
         os.makedirs(dir)
-    with open(os.path.join(dir, file), 'w') as f:
+    with open(os.path.join(dir, file), 'w', encoding=utf_8) as f:
         f.writelines(string)
 
 
 def get_sample_code(string: str) -> tuple:
+    '''Obtains a sample code from a given string, which is given
+    in a form of `CCCNNNNN`, where `C` is a character and `N` represents
+    a number.
+    '''
     index = 0
     for char in string.lstrip():
         if char not in '0123456789':
@@ -81,9 +92,9 @@ def get_sample_code(string: str) -> tuple:
 
 
 if __name__ == "__main__":
-    for file in os.scandir(RAW_DATA_PATH):
-        if file.is_file():
-            convert(file)
-            create_cls(file)
-            convert_to_txt(file)
-            convert_to_gct(file)
+    for f in os.scandir(RAW_DATA_PATH):
+        if f.is_file():
+            convert(f)
+            create_cls(f)
+            convert_to_txt(f)
+            convert_to_gct(f)
