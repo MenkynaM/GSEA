@@ -9,6 +9,7 @@ CONVERTED_DIR_PATH = os.path.join(DATA_DIR, 'converted')
 PHENOTYPES_DIR_PATH = os.path.join(DATA_DIR, 'phenotypes')
 TXT_DIR_PATH = os.path.join(DATA_DIR, 'txt')
 RAW_DATA_PATH = os.path.join(DATA_DIR, 'raw')
+RAW_CSV_DATA_PATH = os.path.join(DATA_DIR, 'csv')
 CHIP_DL_URL = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
 
 # WINDOWS

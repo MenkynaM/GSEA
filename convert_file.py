@@ -1,4 +1,4 @@
-from encodings import utf_8
+from email.encoders import encode_noop
 import os
 from paths import *
 
@@ -7,7 +7,7 @@ def convert(file: str) -> None:
     '''Converts a file into its corresponding .csv counterpart
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '_conv.csv'
-    with open(file, 'r', encoding=utf_8) as f:
+    with open(file, 'r', encoding='utf8') as f:
         text = ',"' + '","'.join([b.strip()
                                  for b in next(f).split(';')][1:]) + '"\n'
         for line in f:
@@ -16,11 +16,26 @@ def convert(file: str) -> None:
     write_file(file_name, CONVERTED_DIR_PATH, text)
 
 
+def convert_to_csv(file: str):
+    '''Converts a file into its corresponding .csv counterpart,
+    data files from Proline are exported as comma separated, the rest
+    of these script rely on semicolon separated files
+    '''
+    file_name = os.path.splitext(os.path.basename(file))[0] + '_conv.csv'
+    with open(file, 'r', encoding='utf8') as f:
+        text = '#;' + ';'.join([s.strip().split(' ')[-1][0:-1] for s in next(f).split(',')[1:]]) + '\n'
+        for line in f:
+            ids, vals = line.split(',')[0], line.split(',')[1:]
+            text = text +  ids[:-6] + ';' + ';'.join(vals)
+    write_file(file_name, RAW_CSV_DATA_PATH, text)
+    return os.path.join(RAW_CSV_DATA_PATH, file_name)
+
+
 def convert_to_txt(file):
     '''Converts a csv file into txt format
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.txt'
-    with open(file, 'r', encoding=utf_8) as f:
+    with open(file, 'r', encoding='utf8') as f:
         text = 'NAME\tDESCRIPTION\t' + \
             '\t'.join([s.strip() for s in next(f).split(';')][1:]) + '\n'
         for line in f:
@@ -34,7 +49,7 @@ def convert_to_gct(file):
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.gct'
     nproteins = 0
-    with open(file, 'r', encoding=utf_8) as f:
+    with open(file, 'r', encoding='utf8') as f:
         header = next(f).split(';')
         nsamples = len(header) - 1
         text = 'NAME\tDESCRIPTION\t' + \
@@ -48,11 +63,11 @@ def convert_to_gct(file):
 
 
 def create_cls(file):
-    '''Creates .cls file from a .csv obtained by running 
+    '''Creates .cls file from a .csv obtained by running
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.cls'
     code_set = []
-    with open(file, 'r', encoding=utf_8) as f:
+    with open(file, 'r', encoding='utf8') as f:
         header = next(f).split(';')
         samples = [s.strip() for s in header][1:]
         nsamples = len(samples)
@@ -73,7 +88,7 @@ def write_file(file: str, dir: str, string: str) -> None:
     '''
     if not os.path.exists(dir):
         os.makedirs(dir)
-    with open(os.path.join(dir, file), 'w', encoding=utf_8) as f:
+    with open(os.path.join(dir, file), 'w', encoding='utf8') as f:
         f.writelines(string)
 
 
@@ -92,9 +107,12 @@ def get_sample_code(string: str) -> tuple:
 
 
 if __name__ == "__main__":
-    for f in os.scandir(RAW_DATA_PATH):
-        if f.is_file():
-            convert(f)
-            create_cls(f)
-            convert_to_txt(f)
-            convert_to_gct(f)
+    for raw_file in os.scandir(RAW_DATA_PATH):
+        if raw_file.is_file():
+            with open(raw_file, 'r', encoding='utf8') as text:
+                if ',' in next(text):
+                    raw_file = convert_to_csv(raw_file)
+            convert(raw_file)
+            create_cls(raw_file)
+            convert_to_txt(raw_file)
+            convert_to_gct(raw_file)
