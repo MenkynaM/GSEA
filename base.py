@@ -66,7 +66,7 @@ def download_files(lst: list, url: str) -> None:
     '''Download the files listed in `lst` from `url`
     '''
 
-    # create new directory, if nonexistent, and change there
+    # create new directory, if nonexistent, and move there
     if not os.path.exists(CHIPS_DIR_PATH):
         os.makedirs(CHIPS_DIR_PATH)
     os.chdir(CHIPS_DIR_PATH)
