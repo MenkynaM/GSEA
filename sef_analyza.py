@@ -1,12 +1,14 @@
 import os
-import pandas as pd
-from paths import *
-import matplotlib.pyplot as plt
-import numpy as np
 
-plt.rcParams.update({
-    "text.usetex": True
-})
+# import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+from paths import *
+
+# plt.rcParams.update({
+#     "text.usetex": True
+# })
 
 files = []
 
@@ -35,20 +37,35 @@ def calc_fc(x, series: pd.Series):
 # plt.plot(x, y1, 'ro--', x, y2, 'g^--')
 # plt.show()
 
+
 spectral_count = df.iloc[:, :16].dropna().set_index('Description')
 col_zdravi = [col for col in spectral_count.columns if 'Z' in col]
 col_karcinom = [col for col in spectral_count.columns if 'K' in col]
 
 # comb = {k: v for k in col_zdravi for v in col_karcinom}
-comb = [(zdr, kar) for zdr in col_karcinom for kar in col_karcinom if zdr != kar]
-d = {}
+# comb = [(zdr, kar) for zdr in col_karcinom for kar in col_karcinom if zdr != kar]
+# d = {}
+
 
 inp = input().split(' ')
-sets = [set(spectral_count.loc[spectral_count[c] > 0, [c]].index) for c in inp]
-tmp = sets[0].intersection(sets[1])
-for s in sets:
-    tmp = tmp.intersection(s)
-print(len(tmp))
+sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [
+               c]].index) for c in col_karcinom}
+vybrane = [sets[elem] for elem in col_karcinom if elem in inp]
+zvysne = [sets[elem] for elem in col_karcinom if elem not in inp]
+# prvy = vybrane[0]
+# print(len(set(prvy).intersection(*vybrane)))
+inter = set(spectral_count.index).intersection(*vybrane)
+print(zvysne)
+print(len(inter.difference(*zvysne)))
+
+# print(len())
+
+# tmp = sets[0].intersection(sets[1])
+# for s in sets:
+#     tmp = tmp.intersection(s)
+# for z in zvysok:
+#     tmp = tmp.difference(set(spectral_count[z].index))
+# print(len(tmp))
 
 # for c in comb:
 #     s1 = set(spectral_count.loc[spectral_count[c[0]] > 0, [c[0]]].index)
