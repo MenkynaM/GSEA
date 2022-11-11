@@ -48,14 +48,10 @@ col_karcinom = [col for col in spectral_count.columns if 'K' in col]
 
 
 inp = input().split(' ')
-sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [
-               c]].index) for c in col_karcinom}
+sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [c]].index) for c in col_karcinom}
 vybrane = [sets[elem] for elem in col_karcinom if elem in inp]
 zvysne = [sets[elem] for elem in col_karcinom if elem not in inp]
-# prvy = vybrane[0]
-# print(len(set(prvy).intersection(*vybrane)))
 inter = set(spectral_count.index).intersection(*vybrane)
-# print(zvysne)
 print(len(inter.difference(*zvysne)))
 
 # print(len())
