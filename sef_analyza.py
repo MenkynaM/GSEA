@@ -55,7 +55,7 @@ zvysne = [sets[elem] for elem in col_karcinom if elem not in inp]
 # prvy = vybrane[0]
 # print(len(set(prvy).intersection(*vybrane)))
 inter = set(spectral_count.index).intersection(*vybrane)
-print(zvysne)
+# print(zvysne)
 print(len(inter.difference(*zvysne)))
 
 # print(len())
