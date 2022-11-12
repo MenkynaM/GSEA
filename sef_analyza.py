@@ -1,10 +1,10 @@
 import os
 
 # import matplotlib.pyplot as plt
-import numpy as np
+# import numpy as np
 import pandas as pd
 
-from paths import *
+from paths import PROLINE_RAW_DATA_PATH
 
 # plt.rcParams.update({
 #     "text.usetex": True
@@ -17,12 +17,8 @@ for file in os.scandir(PROLINE_RAW_DATA_PATH):
         files.append(file)
 
 
-df = pd.read_excel(files[0])
+df = pd.read_excel(files[0], sheet_name='CD8')
 # print(df)
-
-
-def calc_fc(x, series: pd.Series):
-    return x - series.mean()
 
 # fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
 # fig.suptitle('Pocet proteinov')
@@ -41,34 +37,23 @@ def calc_fc(x, series: pd.Series):
 spectral_count = df.iloc[:, :16].dropna().set_index('Description')
 col_zdravi = [col for col in spectral_count.columns if 'Z' in col]
 col_karcinom = [col for col in spectral_count.columns if 'K' in col]
+col_all = [col for col in spectral_count.columns if 'K' in col or 'Z' in col]
+
+col_vybrany = col_zdravi
 
 inp = input().split(' ')
 
-sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [c]].index) for c in col_karcinom}
-vybrane = [sets[elem] for elem in col_karcinom if elem in inp]
-zvysne = [sets[elem] for elem in col_karcinom if elem not in inp]
-inter = set(spectral_count.index).intersection(*vybrane)
-print(len(inter.difference(*zvysne)))
+while not inp == ['q']:
+    if col_vybrany != col_all:
+        inp = ['K' + i if col_vybrany == col_karcinom else 'Z' + i for i in inp]
+    sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [c]].index) for c in col_vybrany}
+    vybrane = [sets[elem] for elem in col_vybrany if elem in inp]
+    zvysne = [sets[elem] for elem in col_vybrany if elem not in inp]
+
+    inter = set(spectral_count.index).intersection(*vybrane)
+    # print(inp)
+    vysledok = len(inter.difference(*zvysne))
+    print(f'{vysledok} \t farba ma byt {2 * vysledok}')
+    inp = input().split(' ')
 
 
-# sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [c]].index) for c in col_karcinom}
-# vybrane = [sets[elem] for elem in col_karcinom if elem in inp]
-# zvysne = [sets[elem] for elem in col_karcinom if elem not in inp]
-# inter = set(spectral_count.index).intersection(*vybrane)
-# print(len(inter.difference(*zvysne)))
-
-
-
-
-
-# for col in spectral_count.columns:
-#     if col in col_karcinom:
-# print(spectral_count[col])
-# spectral_count[col + '-logFC'] = spectral_count[col].apply(calc_fc, args=())
-# for col in cols:
-#     if col[0] == 'K':
-# idx_start, idx_end =
-#     spectral_count[col + '-FC'] =
-# print(col)
-# spectral_count['tmp'] = spectral_count['K1'].apply(lambda row: row + 1)
-# print(cols)
