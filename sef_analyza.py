@@ -42,41 +42,24 @@ spectral_count = df.iloc[:, :16].dropna().set_index('Description')
 col_zdravi = [col for col in spectral_count.columns if 'Z' in col]
 col_karcinom = [col for col in spectral_count.columns if 'K' in col]
 
-# comb = {k: v for k in col_zdravi for v in col_karcinom}
-# comb = [(zdr, kar) for zdr in col_karcinom for kar in col_karcinom if zdr != kar]
-# d = {}
-
-
 inp = input().split(' ')
+
 sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [c]].index) for c in col_karcinom}
 vybrane = [sets[elem] for elem in col_karcinom if elem in inp]
 zvysne = [sets[elem] for elem in col_karcinom if elem not in inp]
 inter = set(spectral_count.index).intersection(*vybrane)
 print(len(inter.difference(*zvysne)))
 
-# print(len())
 
-# tmp = sets[0].intersection(sets[1])
-# for s in sets:
-#     tmp = tmp.intersection(s)
-# for z in zvysok:
-#     tmp = tmp.difference(set(spectral_count[z].index))
-# print(len(tmp))
-
-# for c in comb:
-#     s1 = set(spectral_count.loc[spectral_count[c[0]] > 0, [c[0]]].index)
-#     s2 = set(spectral_count.loc[spectral_count[c[1]] > 0, [c[1]]].index)
-#     d[c] = len(s1.intersection(s2))
+# sets = {c: set(spectral_count.loc[spectral_count[c] > 0, [c]].index) for c in col_karcinom}
+# vybrane = [sets[elem] for elem in col_karcinom if elem in inp]
+# zvysne = [sets[elem] for elem in col_karcinom if elem not in inp]
+# inter = set(spectral_count.index).intersection(*vybrane)
+# print(len(inter.difference(*zvysne)))
 
 
-# for key, val in d.items():
-#     print(str(key) + ' - ' + str(val))
 
-# print(len(d))
-# print(set(spectral_count.loc[spectral_count[comb[0][0]] > 0, [comb[0][0]]].index))
-# for zdr in col_zdravi:
-#     for kar in col_karcinom:
-#         print(zdr, kar)
+
 
 # for col in spectral_count.columns:
 #     if col in col_karcinom:
