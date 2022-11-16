@@ -18,23 +18,9 @@ for file in os.scandir(PROLINE_RAW_DATA_PATH):
 
 
 df = pd.read_excel(files[0], sheet_name='CD8')
-# print(df)
-
-# fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
-# fig.suptitle('Pocet proteinov')
-# x = np.arange(1, 8.1, 1)
-# y1 = np.array([15, 8, 3, 8, 11, 10, 6, np.nan])
-# y2 = np.array([18, 19, 46, 22, 15, 30, 46, 61])
-# ax1.plot(x, y1, 'ro--')
-# ax1.set_xlabel('Karcinom')
-# ax2.plot(x, y2, 'g^--')
-# ax2.set_xlabel('Zdrave pacientky')
-# plt.show()
-# plt.plot(x, y1, 'ro--', x, y2, 'g^--')
-# plt.show()
-
 
 spectral_count = df.iloc[:, :16].dropna().set_index('Description')
+print(spectral_count.head())
 col_zdravi = [col for col in spectral_count.columns if 'Z' in col]
 col_karcinom = [col for col in spectral_count.columns if 'K' in col]
 col_all = [col for col in spectral_count.columns if 'K' in col or 'Z' in col]
