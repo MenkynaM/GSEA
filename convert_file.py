@@ -107,13 +107,17 @@ def get_sample_code(string: str) -> tuple:
 
 
 if __name__ == "__main__":
+    print(get_prot_description(["MYH9_HUMAN", "ALBU_HUMAN", "ANXA2_HUMAN"]))
     print(get_kegg_ids(["MYH9_HUMAN", "ALBU_HUMAN", "ANXA2_HUMAN"]))
-    for raw_file in os.scandir(RAW_DATA_PATH):
-        if raw_file.is_file():
-            with open(raw_file, 'r', encoding='utf8') as text:
-                if ',' in next(text):
-                    raw_file = convert_to_csv(raw_file)
-            convert(raw_file)
-            create_cls(raw_file)
-            convert_to_txt(raw_file)
-            convert_to_gct(raw_file)
+
+    # print(a['MYH9_HUMAN']['proteinDescription']['recommendedName']['fullName']['value'])
+    # print(a)
+    # for raw_file in os.scandir(RAW_DATA_PATH):
+    #     if raw_file.is_file():
+    #         with open(raw_file, 'r', encoding='utf8') as text:
+    #             if ',' in next(text):
+    #                 raw_file = convert_to_csv(raw_file)
+    #         convert(raw_file)
+    #         create_cls(raw_file)
+    #         convert_to_txt(raw_file)
+    #         convert_to_gct(raw_file)
