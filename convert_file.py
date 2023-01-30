@@ -23,7 +23,7 @@ def convert_to_csv(file: str):
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '_conv.csv'
     with open(file, 'r', encoding='utf8') as f:
-        text = '#;' + ';'.join([s.strip().split(' ')[-1][0:-1] for s in next(f).split(',')[1:]]) + '\n'
+        text = '#;' + ';'.join([s.strip().split(' ')[-1] for s in next(f).split(',')[1:]]) + '\n'
         for line in f:
             ids, vals = line.split(',')[0], line.split(',')[1:]
             text = text +  ids[:-6] + ';' + ';'.join(vals)
@@ -107,8 +107,8 @@ def get_sample_code(string: str) -> tuple:
 
 
 if __name__ == "__main__":
-    print(get_prot_description(["MYH9_HUMAN", "ALBU_HUMAN", "ANXA2_HUMAN"]))
-    print(get_kegg_ids(["MYH9_HUMAN", "ALBU_HUMAN", "ANXA2_HUMAN"]))
+    # print(get_prot_description(["MYH9_HUMAN", "ALBU_HUMAN", "ANXA2_HUMAN"]))
+    print(get_kegg_ids(["MYH9_HUMAN", "ALBU_HUMAN", "PLSL_HUMAN"]))
 
     # print(a['MYH9_HUMAN']['proteinDescription']['recommendedName']['fullName']['value'])
     # print(a)

@@ -186,11 +186,19 @@ def get_prot_description(idx):
     if check_id_mapping_results_ready(job_id):
         link = get_id_mapping_results_link(job_id)
         results = parse_results_to_dic(get_id_mapping_results_search(link))
-    return [results[res]['proteinDescription']['recommendedName']['fullName']['value'] for res in results]
+    return {res: results[res]['proteinDescription']['recommendedName']['fullName']['value'] for res in results}
 
 
 def get_kegg_ids(idx):
     job_id = submit_id_mapping(from_db="UniProtKB_AC-ID", to_db="KEGG", ids=idx)
+    if check_id_mapping_results_ready(job_id):
+        link = get_id_mapping_results_link(job_id)
+        results = parse_results_to_dic(get_id_mapping_results_search(link))
+    return results
+
+
+def get_gene_names(idx):
+    job_id = submit_id_mapping(from_db="UniProtKB_AC-ID", to_db="Gene_Name", ids=idx)
     if check_id_mapping_results_ready(job_id):
         link = get_id_mapping_results_link(job_id)
         results = parse_results_to_dic(get_id_mapping_results_search(link))
