@@ -4,72 +4,44 @@ from id_mapping import *
 
 
 def convert(file: str) -> None:
-    '''Converts a file into its corresponding .csv counterpart
+    '''Creates a .gct file suitable for inputting into the GSEA software.
+
+    Parameters:
+    `file`: path of the file to be transformed
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.gct'
     with open(file, 'r', encoding='utf8') as f:
-        next(f)
+        # vytvori header (3. riadok v spravnom formate)
+        header = 'NAME\tDescription\t' + \
+            '\t'.join([s.split(' ')[-1].strip()
+                      for s in next(f).split(',')[1:]]) + '\n'
+        
+        # pocet vzoriek, ktore su v subore, napr. (Z1, Z2, ...)
+        nsamples = len(header.split('\t')) - 2
+
+        # vytovrenie dict nameranych hodnot pre jednotlive proteiny
         proteins = {}
         for line in f:
             dat = line.split(',')
-            proteins[dat[0]] = dat[1:]
-            # ids.append(line.split(',')[0])
+            proteins[dat[0]] = '\t'.join([str(val) for val in dat[1:]]).strip()
     ids = list(proteins.keys())
+
+    # ziskanie Gene_Name a popis jednotlivych proteinov pomocou API UniProt-u
     gene_names = get_gene_names(ids)
     protein_descriptions = get_prot_description(ids)
-    protein_descriptions = {gene_names[protein]: protein_descriptions[protein] for protein in protein_descriptions if protein in gene_names.keys()}
+    protein_descriptions = {gene_names[protein]: protein_descriptions[protein]
+                            for protein in protein_descriptions if protein in gene_names.keys()}
+
+    # filtrovanie pre proteiny, ktore sa nasli v UniProt-e a ich pocet
     correct_names = [gene_names[id] for id in ids if id in gene_names.keys()]
-    nproteins = 0
-    text = ''
-    with open(file, 'r', encoding='utf8') as f:
-        header = next(f)
-        nsamples = len(header.split(',')) - 1
-        for line in f:
-            if line.split(',')[0] in gene_names.keys():
-                protein = correct_names[nproteins]
-                text = text + f'{protein}\t{protein_descriptions[protein]}\t' + '\t'.join(line.strip().split(',')[1:]) + '\n'
-                nproteins += 1
-    header = 'NAME\tDescription\t' + '\t'.join([cell.split(' ')[-1] for cell in header.strip().split(',')[1:]]) + '\n'
+    nproteins = len(correct_names)
+
+    # formatovanie dat o jednotlivych proteinoch a nasledne spojenie s header-om a dalsim popisom
+    text = '\n'.join([gene_names[prot] + '\t' + protein_descriptions[gene_names[prot]] +
+                     '\t' + proteins[prot] for prot in proteins if prot in gene_names.keys()])
     text = '#1.2\n' + f'{nproteins}\t{nsamples}\n' + header + text
-    write_file(file_name, GCT_DIR_PATH, text)
-    
 
-    # print(gene_names['PHB_HUMAN'])
-    # print(protein_descriptions)
-    # print(len(correct_names))
-    # print(len(ids))
-
-
-
-
-# def convert_to_txt(file):
-#     '''Converts a csv file into txt format
-#     '''
-#     file_name = os.path.splitext(os.path.basename(file))[0] + '.txt'
-#     with open(file, 'r', encoding='utf8') as f:
-#         text = 'NAME\tDESCRIPTION\t' + \
-#             '\t'.join([s.strip() for s in next(f).split(',')][1:]) + '\n'
-#         for line in f:
-#             cells = line.split(',')
-#             text = text + '\t'.join([cells[0]] + ['na'] + cells[1:])
-#     write_file(file_name, TXT_DIR_PATH, text)
-
-
-def convert_to_gct(file):
-    '''Converts a csv file into gct format
-    '''
-    file_name = os.path.splitext(os.path.basename(file))[0] + '.gct'
-    nproteins = 0
-    with open(file, 'r', encoding='utf8') as f:
-        header = next(f).split(',')
-        nsamples = len(header) - 1
-        text = 'NAME\tDESCRIPTION\t' + \
-            '\t'.join([s.strip() for s in header][1:]) + '\n'
-        for line in f:
-            nproteins = nproteins + 1
-            cells = line.split(',')
-            text = text + '\t'.join([cells[0]] + ['na'] + cells[1:])
-    text = f'#1.2\n{nproteins}\t{nsamples}\n' + text
+    # zapis do suboru
     write_file(file_name, GCT_DIR_PATH, text)
 
 
