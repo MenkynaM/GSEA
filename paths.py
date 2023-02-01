@@ -12,6 +12,7 @@ RAW_DATA_PATH = os.path.join(DATA_DIR, 'raw')
 RAW_CSV_DATA_PATH = os.path.join(DATA_DIR, 'csv')
 KEGG_DATA_PATH = os.path.join(DATA_DIR, 'kegg')
 PROLINE_RAW_DATA_PATH = os.path.join(DATA_DIR, 'proline_raw')
+LOG_DIR_PATH = os.path.join(DATA_DIR, 'log')
 CHIP_DL_URL = 'https://data.broadinstitute.org/gsea-msigdb/msigdb/annotations_versioned/'
 
 # WINDOWS

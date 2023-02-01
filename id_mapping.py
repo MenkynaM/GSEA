@@ -181,6 +181,11 @@ def parse_results_to_dic(results):
         res[item['from']] = item['to']
     return res
 
+def get_GN_prot_description(prot):
+    results = json.loads(requests.get(f"https://rest.uniprot.org/uniprotkb/stream?format=json&query=%28{prot}%29&size=10", timeout=2).text)
+    return results['results'][0]['proteinDescription']['recommendedName']['fullName']['value']
+
+
 def get_prot_description(idx):
     job_id = submit_id_mapping(from_db="UniProtKB_AC-ID", to_db="UniProtKB", ids=idx)
     if check_id_mapping_results_ready(job_id):
@@ -194,7 +199,7 @@ def get_kegg_ids(idx):
     if check_id_mapping_results_ready(job_id):
         link = get_id_mapping_results_link(job_id)
         results = parse_results_to_dic(get_id_mapping_results_search(link))
-    return results
+    return {res: results[res][4:] for res in results}
 
 
 def get_gene_names(idx):
@@ -210,3 +215,6 @@ def get_gene_names(idx):
 # print(parse_results_to_dic(results))
 # results_dict = json.load(results)
 # print(results_dict)
+
+if __name__ == '__main__':
+    print(get_GN_prot_description('PHB_HUMAN'))

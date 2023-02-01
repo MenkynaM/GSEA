@@ -3,13 +3,14 @@ from paths import *
 from id_mapping import *
 
 
-def convert(file: str) -> None:
+def convert(file: str, ch: int) -> None:
     '''Creates a .gct file suitable for inputting into the GSEA software.
 
     Parameters:
     `file`: path of the file to be transformed
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.gct'
+    log_file = os.path.splitext(os.path.basename(file))[0] + '.log'
     with open(file, 'r', encoding='utf8') as f:
         # vytvori header (3. riadok v spravnom formate) - NAMe'\t'Description'\t'Oznacenia vzoriek
         header = 'NAME\tDescription\t' + \
@@ -26,19 +27,39 @@ def convert(file: str) -> None:
             proteins[dat[0]] = '\t'.join([str(val) for val in dat[1:]]).strip()
     ids = list(proteins.keys())
 
-    # ziskanie Gene_Name a popis jednotlivych proteinov pomocou API UniProt-u
-    gene_names = get_gene_names(ids)
-    protein_descriptions = get_prot_description(ids)
-    protein_descriptions = {gene_names[protein]: protein_descriptions[protein]
-                            for protein in protein_descriptions if protein in gene_names.keys()}
+    # ziskanie Gene_Name alebo KEGG ID (podla vyberu) a popis jednotlivych proteinov pomocou API UniProt-u
+    if ch == 2:
+        gene_names = get_gene_names(ids)
+    else:
+        gene_names = get_kegg_ids(ids)
 
+    protein_descriptions = get_prot_description(ids)
+    new_names = gene_names.keys()
+
+    volba = "KEGG ID" if ch != 2 else "Gene Name"
+    log_file = os.path.splitext(os.path.basename(file))[0] + f'{volba[:4]}.log'
+    # logovanie prosteinov, ktore sa nanasli v KEGG / Gene Name
+    print(f'{volba} sa nenaslo pre tieto proteiny ({len(set(ids) - set(new_names))} z celkoveho poctu {len(ids)}):')
+    if not os.path.exists(LOG_DIR_PATH):
+        os.makedirs(LOG_DIR_PATH)
+    with open(os.path.join(LOG_DIR_PATH, log_file), 'w', encoding='utf8') as f:
+        f.write(f'---------------------------------------------------------\n {os.path.splitext(os.path.basename(file))[0]}\n---------------------------------------------------------\n')
+        f.write(f'{volba} sa nenaslo pre tieto proteiny ({len(set(ids) - set(new_names))} z celkoveho poctu {len(ids)}):\n')
+        for protein in ids:
+            if protein not in new_names:
+                print(protein)
+                f.writelines(protein + '\n')
+        f.write('---------------------------------------------------------')
+
+    protein_descriptions = {gene_names[protein]: protein_descriptions[protein]
+                            for protein in protein_descriptions if protein in new_names}
     # filtrovanie pre proteiny, ktore sa nasli v UniProt-e a ich pocet
-    correct_names = [gene_names[id] for id in ids if id in gene_names.keys()]
+    correct_names = [gene_names[id] for id in ids if id in new_names]
     nproteins = len(correct_names)
 
     # formatovanie dat o jednotlivych proteinoch a nasledne spojenie s header-om a dalsim popisom
     text = '\n'.join([gene_names[prot] + '\t' + protein_descriptions[gene_names[prot]] +
-                     '\t' + proteins[prot] for prot in proteins if prot in gene_names.keys()])
+                     '\t' + proteins[prot] for prot in proteins if prot in new_names])
     text = '#1.2\n' + f'{nproteins}\t{nsamples}\n' + header + text
 
     # zapis do suboru
@@ -66,12 +87,12 @@ def create_cls(file):
     write_file(file_name, PHENOTYPES_DIR_PATH, my_form)
 
 
-def write_file(file: str, dir: str, string: str) -> None:
+def write_file(file: str, direct: str, string: str) -> None:
     '''Temp function for writing into a file
     '''
-    if not os.path.exists(dir):
-        os.makedirs(dir)
-    with open(os.path.join(dir, file), 'w', encoding='utf8') as f:
+    if not os.path.exists(direct):
+        os.makedirs(direct)
+    with open(os.path.join(direct, file), 'w', encoding='utf8') as f:
         f.writelines(string)
 
 
@@ -90,7 +111,8 @@ def get_sample_code(string: str) -> tuple:
 
 
 if __name__ == "__main__":
+    choice = int(input('KEGG (1) / Gene Name (2): '))
     for raw_file in os.scandir(RAW_DATA_PATH):
         if raw_file.is_file():
-            convert(raw_file)
+            convert(raw_file, choice)
             create_cls(raw_file)
