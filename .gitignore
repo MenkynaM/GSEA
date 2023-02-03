@@ -1,4 +1,2 @@
 data/
-_pycache_
-convert_file.py
-test.ipynb
+ignore/
