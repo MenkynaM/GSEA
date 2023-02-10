@@ -3,7 +3,7 @@ from paths import *
 from id_mapping import *
 
 
-def convert(file: str, ch: int) -> None:
+def convert(file: str, name_choice: int) -> None:
     '''Creates a .gct file suitable for inputting into the GSEA software.
 
     Parameters:
@@ -28,7 +28,7 @@ def convert(file: str, ch: int) -> None:
     ids = list(proteins.keys())
 
     # ziskanie Gene_Name alebo KEGG ID (podla vyberu) a popis jednotlivych proteinov pomocou API UniProt-u
-    if ch == 2:
+    if name_choice == 2:
         gene_names = get_gene_names(ids)
     else:
         gene_names = get_kegg_ids(ids)
@@ -36,7 +36,7 @@ def convert(file: str, ch: int) -> None:
     protein_descriptions = get_prot_description(ids)
     new_names = gene_names.keys()
 
-    volba = "KEGG ID" if ch != 2 else "Gene Name"
+    volba = "KEGG ID" if name_choice != 2 else "Gene Name"
     log_file = os.path.splitext(os.path.basename(file))[0] + f'{volba[:4]}.log'
     # logovanie prosteinov, ktore sa nanasli v KEGG / Gene Name
     print(f'{volba} sa nenaslo pre tieto proteiny ({len(set(ids) - set(new_names))} z celkoveho poctu {len(ids)}):')
@@ -73,7 +73,12 @@ def create_cls(file):
     code_set = []
     with open(file, 'r', encoding='utf8') as f:
         header = next(f).split(',')
-        samples = [s.strip().split(' ')[-1] for s in header[1:]]
+
+        # delenie na subory pre 'mess' (vzorky nie su zmergovane podla jednotlivych merani) a normalny postup,resp. naopak
+        if '_' not in header[1]:
+            samples = [s.strip().split(' ')[-1] for s in header[1:]]
+        else:
+            samples = [s.strip().split(' ')[-1].split('_')[2] if 'z' in s else s.strip().split(' ')[-1].split('_')[1] for s in header[1:]]
         nsamples = len(samples)
         my_form = [-1] * nsamples
         for index, sample in enumerate(samples):
@@ -110,9 +115,26 @@ def get_sample_code(string: str) -> tuple:
     return (string[:index], string[index:])
 
 
+def semi2comma(file: str):
+    '''Detects if `file` has semicolons instead of commas and changes to
+    true .csv format accordingly
+    '''
+    with open(file, 'r', encoding='utf8') as f:
+        file_content = f.readlines()
+        if ';' in file_content[0]:
+            new_string = ''.join([','.join(row.split(';')) for row in file_content])
+        else:
+            new_string = file_content
+    write_file(file, RAW_DATA_PATH, new_string)
+    
+
+
 if __name__ == "__main__":
     choice = int(input('KEGG (1) / Gene Name (2): '))
     for raw_file in os.scandir(RAW_DATA_PATH):
         if raw_file.is_file():
+            print(f'Spracovavam {str(raw_file)[11:-2]}')
+            semi2comma(raw_file)
             convert(raw_file, choice)
+            time.sleep(1)
             create_cls(raw_file)
