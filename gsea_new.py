@@ -1,6 +1,7 @@
 import os
 from paths import *
 from id_mapping import *
+from datetime import date
 
 
 def convert(file: str, name_choice: int) -> None:
@@ -9,8 +10,6 @@ def convert(file: str, name_choice: int) -> None:
     Parameters:
     `file`: path of the file to be transformed
     '''
-    file_name = os.path.splitext(os.path.basename(file))[0] + '.gct'
-    log_file = os.path.splitext(os.path.basename(file))[0] + '.log'
     with open(file, 'r', encoding='utf8') as f:
         # vytvori header (3. riadok v spravnom formate) - NAMe'\t'Description'\t'Oznacenia vzoriek
         header = 'NAME\tDescription\t' + \
@@ -36,7 +35,9 @@ def convert(file: str, name_choice: int) -> None:
     protein_descriptions = get_prot_description(ids)
     new_names = gene_names.keys()
 
+    
     volba = "KEGG ID" if name_choice != 2 else "Gene Name"
+    file_name = os.path.splitext(os.path.basename(file))[0] + f'{volba[:4]}.gct'
     log_file = os.path.splitext(os.path.basename(file))[0] + f'{volba[:4]}.log'
     # logovanie prosteinov, ktore sa nanasli v KEGG / Gene Name
     print(f'{volba} sa nenaslo pre tieto proteiny ({len(set(ids) - set(new_names))} z celkoveho poctu {len(ids)}):')
@@ -63,7 +64,7 @@ def convert(file: str, name_choice: int) -> None:
     text = '#1.2\n' + f'{nproteins}\t{nsamples}\n' + header + text
 
     # zapis do suboru
-    write_file(file_name, GCT_DIR_PATH, text)
+    write_file(file_name, os.path.join(GCT_DIR_PATH, str(date.today())), text)
 
 
 def create_cls(file):
@@ -89,7 +90,7 @@ def create_cls(file):
     my_form[-1] = my_form[-1].strip()
     my_form = f'{nsamples} {len(code_set)} 1\n# ' + \
         ' '.join(code_set) + '\n' + ' '.join(my_form)
-    write_file(file_name, PHENOTYPES_DIR_PATH, my_form)
+    write_file(file_name, os.path.join(PHENOTYPES_DIR_PATH, str(date.today())), my_form)
 
 
 def write_file(file: str, direct: str, string: str) -> None:
