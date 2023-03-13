@@ -11,7 +11,7 @@ def convert(file: str, name_choice: int) -> None:
     `file`: path of the file to be transformed
     '''
     with open(file, 'r', encoding='utf8') as f:
-        # vytvori header (3. riadok v spravnom formate) - NAMe'\t'Description'\t'Oznacenia vzoriek
+        # vytvori header (3. riadok v spravnom formate) - NAME'\t'Description'\t'Oznacenia vzoriek
         header = 'NAME\tDescription\t' + \
             '\t'.join([s.split(' ')[-1].strip()
                       for s in next(f).split(',')[1:]]) + '\n'

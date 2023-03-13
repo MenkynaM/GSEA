@@ -22,7 +22,7 @@ TNBC_CD4 = pd.read_csv('CD4.csv', index_col=0).drop(columns=['Description'])
 TNBC_CD4.columns = [
     'TNBC' + str(i + 1) if i < 5 else 'ZDRAVI' + str(i - 4) for i in range(15)]
 
-# print(LUMA_CD4, LUMB_CD4, TNBC_CD4)
+print(LUMA_CD4, LUMB_CD4, TNBC_CD4)
 
 
 os.chdir(orig_path)
