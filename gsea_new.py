@@ -76,10 +76,11 @@ def create_cls(file):
         header = next(f).split(',')
 
         # delenie na subory pre 'mess' (vzorky nie su zmergovane podla jednotlivych merani) a normalny postup,resp. naopak
-        if '_' not in header[1]:
-            samples = [s.strip().split(' ')[-1] for s in header[1:]]
-        else:
-            samples = [s.strip().split(' ')[-1].split('_')[2] if 'z' in s else s.strip().split(' ')[-1].split('_')[1] for s in header[1:]]
+        samples = [s.strip().split(' ')[-1] for s in header[1:]]
+        # if '_' not in header[1]:
+        #     samples = [s.strip().split(' ')[-1] for s in header[1:]]
+        # else:
+        #     samples = [s.strip().split(' ')[-1].split('_')[2] if 'z' in s else s.strip().split(' ')[-1].split('_')[1] for s in header[1:]]
         nsamples = len(samples)
         my_form = [-1] * nsamples
         for index, sample in enumerate(samples):
@@ -108,12 +109,12 @@ def get_sample_code(string: str) -> tuple:
     a number.
     '''
     index = 0
-    for char in string.lstrip():
-        if char not in '0123456789':
+    for char in string[::-1].rstrip():
+        if char.isnumeric():
             index = index + 1
         else:
             break
-    return (string[:index], string[index:])
+    return (string[:len(string) - index], string[index:])
 
 
 def semi2comma(file: str):

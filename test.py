@@ -36,7 +36,7 @@ merge[merge == ''] = 'NA'
 # merge.fillna('NA')
 merge.index.name = 'Protein Set'
 
-merge.to_csv('merge.csv', index=True)
+merge.to_csv('merge.csv', index=True, sep='\t')
 
 with open('merge.csv', 'r') as file:
     text = ','.join([s if s != '' else 'NA' for s in file.read().split(',')])
@@ -90,7 +90,7 @@ merge1[merge1 == 0] = 'NA'
 merge1.fillna(0)
 merge1.index.name = 'Protein Set'
 
-merge1.to_csv('merge3.csv', index=True)
+merge1.to_csv('merge3.csv', index=True, sep='\t')
 
 with open('merge3.csv', 'r') as file:
     text = ','.join([s if s != '' else 'NA' for s in file.read().split(',')])
