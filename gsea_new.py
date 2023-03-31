@@ -5,7 +5,8 @@ from datetime import date
 
 
 def convert(file: str, name_choice: int) -> None:
-    '''Creates a .gct file suitable for inputting into the GSEA software.
+    '''
+    Creates a .gct file suitable for inputting into the GSEA software.
 
     Parameters:
     `file`: path of the file to be transformed
@@ -68,7 +69,8 @@ def convert(file: str, name_choice: int) -> None:
 
 
 def create_cls(file):
-    '''Creates .cls file from a .csv obtained by running Proline
+    '''
+    Creates .cls file from a .csv obtained by running Proline
     '''
     file_name = os.path.splitext(os.path.basename(file))[0] + '.cls'
     code_set = []
@@ -104,7 +106,8 @@ def write_file(file: str, direct: str, string: str) -> None:
 
 
 def get_sample_code(string: str) -> tuple:
-    '''Obtains a sample code from a given string, which is given
+    '''
+    Obtains a sample code from a given string, which is given
     in a form of `CCCNNNNN`, where `C` is a character and `N` represents
     a number.
     '''
@@ -118,7 +121,8 @@ def get_sample_code(string: str) -> tuple:
 
 
 def semi2comma(file: str):
-    '''Detects if `file` has semicolons instead of commas and changes to
+    '''
+    Detects if `file` has semicolons instead of commas and changes to
     true .csv format accordingly
     '''
     with open(file, 'r', encoding='utf8') as f:
