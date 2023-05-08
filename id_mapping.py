@@ -217,4 +217,4 @@ def get_gene_names(idx):
 # print(results_dict)
 
 if __name__ == '__main__':
-    print(get_GN_prot_description('PHB_HUMAN'))
+    print(get_GN_prot_description(['FIBA_HUMAN', 'FIBA_HUMAN']))
