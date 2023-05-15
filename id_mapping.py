@@ -48,6 +48,7 @@ def check_id_mapping_results_ready(job_id):
         request = session.get(f"{API_URL}/idmapping/status/{job_id}")
         check_response(request)
         j = request.json()
+        # print(j)
         if "jobStatus" in j:
             if j["jobStatus"] == "RUNNING":
                 print(f"Retrying in {POLLING_INTERVAL}s")
@@ -187,6 +188,7 @@ def get_GN_prot_description(prot):
 
 
 def get_prot_description(idx):
+    # time.sleep(3)
     job_id = submit_id_mapping(from_db="UniProtKB_AC-ID", to_db="UniProtKB", ids=idx)
     if check_id_mapping_results_ready(job_id):
         link = get_id_mapping_results_link(job_id)

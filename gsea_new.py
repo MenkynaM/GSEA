@@ -87,6 +87,8 @@ def create_cls(file):
         my_form = [-1] * nsamples
         for index, sample in enumerate(samples):
             code, _ = get_sample_code(sample)
+            if '_' in code:
+                code = 'C_2'
             if code not in code_set:
                 code_set = code_set + [code]
             my_form[index] = code
