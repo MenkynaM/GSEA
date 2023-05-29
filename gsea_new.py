@@ -142,7 +142,7 @@ if __name__ == "__main__":
     for raw_file in os.scandir(RAW_DATA_PATH):
         if raw_file.is_file():
             print(f'Spracovavam {str(raw_file)[11:-2]}')
-            semi2comma(raw_file)
-            convert(raw_file, choice)
-            time.sleep(1)
+            # semi2comma(raw_file)
+            # convert(raw_file, choice)
+            # time.sleep(1)
             create_cls(raw_file)
