@@ -6,6 +6,15 @@ from tkinter import filedialog
 # from bs4 import BeautifulSoup
 
 
+def df_transform(df_new: pd.DataFrame):
+    df_new.columns = [col.split(' ')[-1] if 'Weighted' in col else col for col in df_new.columns]
+    df_new.set_index('Protein Set', inplace=True)
+    
+
+
+    return df_new
+
+
 def get_all_patients():
     # os.chdir(RAW_DATA_PATH)
     files = [f for f in os.scandir(RAW_DATA_PATH) if f.is_file()]
