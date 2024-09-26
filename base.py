@@ -31,8 +31,8 @@ DEFAULT_SETTINGS = [
     '-metric',                  'Signal2Noise',
     '-make_sets',               'true',
     '-rnd_type',                'no_balance',
-    '-permute',                 'phenotype',
-    '-collapse',                'Collapse',
+    '-permute',                 'gene_set',
+    '-collapse',                'No_Collapse',
     '-out',                     os.path.join(DATA_DIR, 'gsea')
 ]
 

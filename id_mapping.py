@@ -48,6 +48,7 @@ def check_id_mapping_results_ready(job_id):
         request = session.get(f"{API_URL}/idmapping/status/{job_id}")
         check_response(request)
         j = request.json()
+        # print(j)
         if "jobStatus" in j:
             if j["jobStatus"] == "RUNNING":
                 print(f"Retrying in {POLLING_INTERVAL}s")
@@ -181,9 +182,30 @@ def parse_results_to_dic(results):
         res[item['from']] = item['to']
     return res
 
+def get_GN_prot_description(prot):
+    results = json.loads(requests.get(f"https://rest.uniprot.org/uniprotkb/stream?format=json&query=%28{prot}%29&size=10", timeout=2).text)
+    return results['results'][0]['proteinDescription']['recommendedName']['fullName']['value']
+
+
+def get_prot_description(idx):
+    # time.sleep(3)
+    job_id = submit_id_mapping(from_db="UniProtKB_AC-ID", to_db="UniProtKB", ids=idx)
+    if check_id_mapping_results_ready(job_id):
+        link = get_id_mapping_results_link(job_id)
+        results = parse_results_to_dic(get_id_mapping_results_search(link))
+    return {res: results[res]['proteinDescription']['recommendedName']['fullName']['value'] for res in results}
+
 
 def get_kegg_ids(idx):
     job_id = submit_id_mapping(from_db="UniProtKB_AC-ID", to_db="KEGG", ids=idx)
+    if check_id_mapping_results_ready(job_id):
+        link = get_id_mapping_results_link(job_id)
+        results = parse_results_to_dic(get_id_mapping_results_search(link))
+    return {res: results[res][4:] for res in results}
+
+
+def get_gene_names(idx):
+    job_id = submit_id_mapping(from_db="UniProtKB_AC-ID", to_db="Gene_Name", ids=idx)
     if check_id_mapping_results_ready(job_id):
         link = get_id_mapping_results_link(job_id)
         results = parse_results_to_dic(get_id_mapping_results_search(link))
@@ -195,3 +217,6 @@ def get_kegg_ids(idx):
 # print(parse_results_to_dic(results))
 # results_dict = json.load(results)
 # print(results_dict)
+
+if __name__ == '__main__':
+    print(get_GN_prot_description(['FIBA_HUMAN', 'FIBA_HUMAN']))
