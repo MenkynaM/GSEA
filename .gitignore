@@ -1,1 +1,27 @@
-data/
+# Working data: the staged tables, GSEA inputs and GSEA reports are all
+# regenerated from data/raw, so only the raw source tables are tracked.
+# (data/* rather than data/, so the negation below can still re-include a path.)
+data/*
+!data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Tooling
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
