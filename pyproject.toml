@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsea-pipeline"
+version = "0.1.0"
+description = "Turn Proline proteomics exports into GSEA inputs, drive the GSEA CLI, and harvest its reports"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Michal Menkyna" }]
+dependencies = ["requests>=2.25"]
+
+[project.optional-dependencies]
+# Only needed by the `tally` command, which reads Proline spreadsheet exports.
+excel = ["openpyxl>=3.0"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+gsea-pipeline = "gsea_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+# The docstring examples in src/ are run as tests too.
+testpaths = ["tests", "src"]
+addopts = "-q --doctest-modules"
